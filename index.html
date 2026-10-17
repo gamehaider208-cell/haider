@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#04060d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ENTER ZONE">
+<meta name="description" content="لوحة مراقبة صالة ENTER ZONE — قراءة حيّة للأجهزة والمبيعات والجرد، مع إيقاف النظام واستئنافه عن بُعد.">
+<title>ENTER ZONE — لوحة المراقبة</title>
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADhklEQVR4nMWXX4hNQRzHvzNzLs4D7qP2biml1r+QP0VtWpG01MrTPiApWom2yIZiZbWSkL9JHrSlKPEgEQ9E/kStrNCuIvfc55uXY/eeMz8Pc8/Zc3dmzj3+T506zcyZ72e+vznzm2HOuImEDMVxJ7Es/ZIl8L/VHZvVA/gV4Z8BsQL8CeEsIPxfidvG1RzIIt56s59EKMEl4IQSIiRwIlzbuDgTeNKJGoA08eV33lIsKAkRQC6QEFJBqHoCI8KVrUtTYSKIOARp4s333pHkDMSgnkTb1dYpBUbA6KNAtl54mmlxxw7YAJY8fE+js1OzfrB2DvPLxQYAcPONpeh9+42vXrIfA+H8jmbrxAL/GzFn3ESyiS989DEWZ0R4unJmjfDY/n652ODmG0sdZ58Qp9FwnO5cZoWwAsx7MkhcqsXFJeFlSxOLBGyDJSF2nnpM0beMCCd2txgh2ITJBa1y1vNPiY+BZ7Pdgm3WNggAOHB50ItCwQg4tne5BuGYBpAcIGKQjOFV0/hCVuGoRP39crHQffGjFy1QUzEChJzH1KbS8L5oXeGlGY01sxQhIe1/1HbCaf2fKXAYAsHxYdE07ds0cVN7z/4VTIQEJ5A41H2//lYcCI6QMwTCzD12hlnahaxuXlJn10IQCgakmgbs7Htrbesy1DmB3TTNgaGhlvgxld79d1NDYGqPZm9yQM+GI456hnNGga6e1an2NO3ZglvlhtoEF0g4gYQIpdZf/wsqDiDTQ7Crb8BYf+/Nyfi9ClEAVAIjpnLJ2KI54LYPMFSUA/7lBZpn/tTj1hCsmtsZv7flSwwAzu+6rbbzkNB5fI2GYDyQIODKiYpukPtlT6o9bfkSi8QBjKZpqdsPWDaiOAyBAK60e365WLMV14OItuJrXS89wRkYwWg/YHHA7XihwlARakGe2+RFaTcaPE3czTeWML/Piw4oQhK2nW0zJ6O0dOz3thBCriAqDtyjd1iNiEXcn3mYUHGAgOP6yunYdGn9z6fjeNCDqwihAEaECs2IA/fcDeOBBK1nPHzPIXYvEHAH96WGq+6JCAD8rjWEQKhBKw5ikeEccOlQAe3HPAznqk4lQAcO1j0XZgIAAL9zHWHEAUKhhBOOYLgKlHTp9ZG6J+QagCwQMczmDVQDULXcvX86830iOhX/0r3gd0vyXqCn4wwXyj8lbgT4mxCmcf/77fgHDFr2AQDFFNkAAAAASUVORK5CYII=">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<script>
+/* ═══ مضمّن داخل هذا الملف: config.js ═══ */
+/* ============================================================
+   ENTER ZONE — لوحة المراقبة: ملف الإعداد
+   ============================================================ */
+window.EZPanelConfig = {
+
+  /* ==== 1) الوضع ==== */
+  mode: 'firebase',        /* firebase = Realtime Database (المشروع مربوط عليه) */
+  branch: 'main',          /* يجب أن يساوي «معرّف الفرع» في نظام الكاشير */
+  pollSec: 3,              /* تحديث اللوحة كل كم ثانية */
+
+  /* ==== 2) طريقة الدخول ====
+     'firebase' → اسم مستخدم/كلمة مرور من Firebase Authentication (البريد + كلمة المرور)
+     'program'  → نفس حسابات موظفي الكاشير (لا تحتاج فايربيز)
+     ''          → تلقائي: فايربيز في الأوضاع السحابية، وحسابات النظام في local/demo */
+  loginMode: 'direct',
+
+  /* ==== 3) بيانات مشروع Firebase — project: haider-9484a ==== */
+  firebase: {
+    apiKey: 'AIzaSyBxen60SJQyNajjnrAjN_Nvrbxy3DwhxfY',
+    projectId: 'haider-9484a',
+    authDomain: 'haider-9484a.firebaseapp.com',
+    databaseURL: 'https://haider-9484a-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'haider-9484a.firebasestorage.app',
+    appId: '1:286389684367:web:79e1196d94597fce0ec8fa',
+    messagingSenderId: '286389684367'
+  },
+
+  /* حساب الكاشير (الذي يكتب حالة النظام). اللوحة لا تحتاجه للدخول البشري،
+     لكن كتابته هنا تفيد إن أردت أن تقرأ اللوحة بلا تسجيل دخول (وضع الطوارئ). */
+  device: { email: '', password: '' },
+
+  /* ==== 4) حسابات مسموح لها باللوحة (احتياط) ====
+     الأصل أن تُكتب هذه البريدات داخل نظام الكاشير لكل موظف (حقل «بريد Firebase»)
+     مع إعطائه صلاحية «لوحة المراقبة»، فهي التي تُصدر للقواعد. */
+  allow: [
+    // 'watch@enterzone.app',
+    // 'haider@enterzone.app'
+  ],
+
+  /* ==== 5) خيارات ==== */
+  remember: true,          /* إبقاء جلسة الدخول في هذا التبويب حتى تُغلقه */
+  showLogs: true           /* تبويب سجل العمليات */
+};
+
+/* ============================================================
+   خطوات التشغيل (مختصرة)
+   ------------------------------------------------------------
+   1) Firebase Console ← Authentication ← Sign-in method ← Email/Password  ← Enable
+   2) Authentication ← Users ← Add user: أنشئ حسابًا للكاشير (مثال:
+      pos@enterzone.app / كلمة مرور) واكتبه في نظام الكاشير
+      (⚙ الإعدادات ← ☁ الاتصال والمراقبة ← حساب هذا الجهاز).
+      ثم أنشئ حسابًا لكل من allowed بالمشاهدة واملأ بريده عند الموظف.
+   3) Realtime Database ← Create Database (region: europe-west1) ثم Rules ←
+      الصق القواعد التي تنسخها من اللوحة: تبويب «الاتصال» ← 📎 قواعد الأمان.
+   4) في نظام الكاشير: الوضع = firebase، نفس branch، «💾 حفظ واتصال».
+   5) افتح هذه اللوحة وسجّل دخولك ببريد الموظف.
+   ============================================================ */
+
+</script>
+<script>
+/* ═══ مضمّن داخل هذا الملف: ez-cloud.js ═══ */
+/* ============================================================
+   ENTER ZONE — ez-cloud.js
+   طبقة الاتصال المشتركة بين نظام الكاشير (index.html) ولوحة المراقبة (monitor/index.html)
+   الأوضاع:  off | local | demo | firebase(Realtime Database — REST، بدون أي مكتبة)
+   ============================================================ */
+(function (w) {
+  'use strict';
+
+  const LS = 'enterzone.cloud.cfg.v1';
+  const SKEY = 'enterzone.mirror.v1';            // مرآة الوضع المحلي على نفس الجهاز
+  const DEF = {
+    mode: 'off',                                  // off | local | demo | firebase
+    branch: 'main',                               // اسم الفرع/الصالة — يجب أن يتساوى في الطرفين
+    pushSec: 4,                                   // مدة بث الكاشير للحالة
+    pollSec: 3,                                   // مدة تحديث اللوحة
+    firebase: {
+      apiKey: '',                                 // من إعدادات المشروع (Web app)
+      projectId: '',                              // معرف المشروع
+      databaseURL: '',                            // https://xxxx-default-rtdb.firebaseio.com
+      region: 'europe-west'                        // منطقة Firestore (احتياطية)
+    },
+    device: { email: '', password: '' }           // حساب Authentication لهذا الجهاز (كتابة فقط)
+  };
+  function readLocal() { try { return JSON.parse(localStorage.getItem(LS) || 'null'); } catch (e) { return null; } }
+  function mergeCfg(base, add) {
+    const o = Object.assign({}, base, add || {});
+    o.firebase = Object.assign({}, base.firebase || {}, (add || {}).firebase || {});
+    o.device = Object.assign({}, base.device || {}, (add || {}).device || {});
+    if (!o.branch) o.branch = 'main';
+    o.pushSec = Math.max(2, Number(o.pushSec) || 4);
+    o.pollSec = Math.max(1, Number(o.pollSec) || 3);
+    return o;
+  }
+  let CFG = mergeCfg(DEF, w.EZCloudConfig || {});
+  CFG = mergeCfg(CFG, readLocal());              // المحفوظ في الجهاز يسبق الإعداد المضمّن
+  if (w.EZPanelConfig) CFG = mergeCfg(CFG, w.EZPanelConfig);   // إعداد لوحة المراقبة لها الأولوية
+
+  /* ---------------- تجزئة كلمات المرور (نفس خوارزمية النظام تمامًا) ---------------- */
+  const K256 = [
+    0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
+    0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3, 0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174,
+    0xe49b69c1, 0xefbe4786, 0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,
+    0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7, 0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
+    0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13, 0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
+    0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
+    0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5, 0x391c0cb3, 0x4ed8aa4a, 0x5b9cca4f, 0x682e6ff3,
+    0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208, 0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2
+  ];
+  const rr = (x, n) => ((x >>> n) | (x << (32 - n))) >>> 0;
+  function utf8(str) {
+    const out = [];
+    for (let i = 0; i < str.length; i++) {
+      let c = str.charCodeAt(i);
+      if (c < 0x80) out.push(c);
+      else if (c < 0x800) out.push(0xc0 | (c >> 6), 0x80 | (c & 63));
+      else if (c >= 0xd800 && c < 0xdc00 && i + 1 < str.length) {
+        const c2 = str.charCodeAt(++i);
+        c = 0x10000 + ((c & 0x3ff) << 10) + (c2 & 0x3ff);
+        out.push(0xf0 | (c >> 18), 0x80 | ((c >> 12) & 63), 0x80 | ((c >> 6) & 63), 0x80 | (c & 63));
+      } else out.push(0xe0 | (c >> 12), 0x80 | ((c >> 6) & 63), 0x80 | (c & 63));
+    }
+    return out;
+  }
+  function sha256(msg) {
+    const b = utf8(msg), H = [0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a, 0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19];
+    const len = b.length; b.push(0x80);
+    while (b.length % 64 !== 56) b.push(0);
+    const hi = Math.floor(len / 0x20000000), lo = (len << 3) >>> 0;
+    b.push((hi >>> 24) & 255, (hi >>> 16) & 255, (hi >>> 8) & 255, hi & 255);
+    b.push((lo >>> 24) & 255, (lo >>> 16) & 255, (lo >>> 8) & 255, lo & 255);
+    const ww = new Array(64);
+    for (let i = 0; i < b.length; i += 64) {
+      for (let j = 0; j < 16; j++) ww[j] = (b[i + j * 4] << 24) | (b[i + j * 4 + 1] << 16) | (b[i + j * 4 + 2] << 8) | b[i + j * 4 + 3];
+      for (let j = 16; j < 64; j++) {
+        const s0 = rr(ww[j - 15], 7) ^ rr(ww[j - 15], 18) ^ (ww[j - 15] >>> 3);
+        const s1 = rr(ww[j - 2], 17) ^ rr(ww[j - 2], 19) ^ (ww[j - 2] >>> 10);
+        ww[j] = (ww[j - 16] + s0 + ww[j - 7] + s1) >>> 0;
+      }
+      let a = H[0], bb = H[1], c = H[2], d = H[3], e = H[4], f = H[5], g = H[6], h = H[7];
+      for (let j = 0; j < 64; j++) {
+        const S1 = rr(e, 6) ^ rr(e, 11) ^ rr(e, 25), ch = (e & f) ^ (~e & g);
+        const t1 = (h + S1 + ch + K256[j] + ww[j]) >>> 0;
+        const S0 = rr(a, 2) ^ rr(a, 13) ^ rr(a, 22), mj = (a & bb) ^ (a & c) ^ (bb & c);
+        const t2 = (S0 + mj) >>> 0;
+        h = g; g = f; f = e; e = (d + t1) >>> 0; d = c; c = bb; bb = a; a = (t1 + t2) >>> 0;
+      }
+      H[0] = (H[0] + a) >>> 0; H[1] = (H[1] + bb) >>> 0; H[2] = (H[2] + c) >>> 0; H[3] = (H[3] + d) >>> 0;
+      H[4] = (H[4] + e) >>> 0; H[5] = (H[5] + f) >>> 0; H[6] = (H[6] + g) >>> 0; H[7] = (H[7] + h) >>> 0;
+    }
+    return H.map(x => x.toString(16).padStart(8, '0')).join('');
+  }
+  /* نفس الاشتقاق المستعمل في النظام: salt + '␟' + pw ثم تكرار */
+  function derive(pw, salt, rounds) {
+    let h = sha256(String(salt) + '␟' + pw);
+    for (let i = 0; i < (rounds || 1000); i++) h = sha256(h + salt);
+    return h;
+  }
+  function checkPw(u, pw) {
+    if (!u || !u.hash || !u.salt) return false;
+    const h = derive(pw, u.salt, u.rounds || 1000);
+    if (h.length !== u.hash.length) return false;
+    let diff = 0;
+    for (let i = 0; i < h.length; i++) diff |= h.charCodeAt(i) ^ u.hash.charCodeAt(i);
+    return diff === 0;
+  }
+
+  /* ناقل أحداث بسيط داخل الصفحة (تحديثات فورية بلا انتظار) */
+  const bus = {
+    f: {},
+    on(k, fn) { (this.f[k] = this.f[k] || []).push(fn); return this; },
+    off(k, fn) { this.f[k] = (this.f[k] || []).filter(x => x !== fn); return this; },
+    emit(k, v) { (this.f[k] || []).forEach(fn => { try { fn(v); } catch (e) { try { console.warn('[EZ-Cloud]', e.message); } catch (x) { } } }); }
+  };
+
+  /* ============================================================
+     Firebase Authentication — دخول بالبريد وكلمة المرور (REST بلا SDK)
+     تُحفظ الجلسة على الجهاز وتُجدَّد تلقائيًا حتى يعمل الاتصال عند كل فتح.
+     ============================================================ */
+  const AKEY = 'enterzone.panel.auth.v1';
+  const AUTH = {
+    sess: null,
+    load() { try { this.sess = JSON.parse(localStorage.getItem(AKEY) || 'null'); } catch (e) { this.sess = null; } return this.sess; },
+    store() { try { if (this.sess) localStorage.setItem(AKEY, JSON.stringify(this.sess)); else localStorage.removeItem(AKEY); } catch (e) { } },
+    async signIn(email, password) {
+      const key = (CFG.firebase && CFG.firebase.apiKey) || '';
+      if (!key) throw new Error('لا يوجد apiKey — املأ بيانات المشروع أولًا');
+      const ep = (CFG.firebase._identity || 'https://identitytoolkit.googleapis.com') + '/v1/accounts:signInWithPassword?key=' + encodeURIComponent(key);
+      const r = await fetch(ep, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: String(email || '').trim(), password: String(password || ''), returnSecureToken: true })
+      });
+      let j = {}; try { j = await r.json(); } catch (e) { }
+      if (!r.ok) {
+        const m = (j.error && j.error.message) || ('HTTP ' + r.status);
+        const map = {
+          EMAIL_NOT_FOUND: 'لا يوجد حساب فايربيز بهذا البريد (Firebase ← Authentication ← Users ← Add user)',
+          INVALID_LOGIN_CREDENTIALS: 'البريد أو كلمة المرور غير صحيحة',
+          INVALID_PASSWORD: 'البريد أو كلمة المرور غير صحيحة',
+          OPERATION_NOT_ALLOWED: 'الدخول بالبريد غير مُفعّل: Firebase ← Authentication ← Sign-in method ← Email/Password ← Enable',
+          USER_DISABLED: 'هذا الحساب معطّل في مشروع فايربيز',
+          NETWORK_REQUEST_FAILED: 'تعذّر الوصول لفايربيز — تحقق من الإنترنت'
+        };
+        throw new Error(map[m] || m);
+      }
+      this.sess = {
+        email: j.email, uid: j.localId, token: j.id_token, refresh: j.refresh_token,
+        exp: Date.now() + (Number(j.expires_in) || 3600) * 1000 - 30000
+      };
+      this.store();
+      bus.emit('signin', this.sess);
+      return this.sess;
+    },
+    async token() {
+      if (!this.sess) return null;
+      if (this.sess.exp > Date.now() + 20000 && this.sess.token) return this.sess.token;
+      try {
+        const key = (CFG.firebase && CFG.firebase.apiKey) || '';
+        const r = await fetch((CFG.firebase._secure || 'https://securetoken.googleapis.com') + '/v1/token?key=' + encodeURIComponent(key), {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ grant_type: 'refresh_token', refresh_token: this.sess.refresh })
+        });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error((j.error && j.error.message) || 'refresh failed');
+        this.sess.token = j.id_token; this.sess.refresh = j.refresh_token || this.sess.refresh;
+        this.sess.exp = Date.now() + (Number(j.expires_in) || 3600) * 1000 - 30000;
+        this.store();
+        return this.sess.token;
+      } catch (e) { this.signOut(); throw new Error('انتهت جلسة الدخول — أعد إدخال البريد وكلمة المرور'); }
+    },
+    signOut() { this.sess = null; this.store(); bus.emit('signedout', 1); },
+    who() { return this.sess ? { email: this.sess.email, uid: this.sess.uid } : null; }
+  };
+  AUTH.load();
+  /* ================== طبقة النقل ================== */
+  const T = {};
+  const now = () => Date.now();
+  const pad = n => String(n).padStart(2, '0');
+  const dayKey = ts => { const d = new Date(ts); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); };
+
+  /* ---- 1) محلي: نفس الجهاز/المتصفح (localStorage + BroadcastChannel) ---- */
+  T.local = function () {
+    let ch = null;
+    try { ch = w.BroadcastChannel ? new BroadcastChannel('ez-mirror') : null; } catch (e) { }
+    const write = s => { try { localStorage.setItem(SKEY, JSON.stringify(s)); ch && ch.postMessage({ k: 'st', s }); } catch (e) { return Promise.reject(e); } return Promise.resolve(true); };
+    /* أوامر اللوحة محفوظة بين البثات حتى يلتقطها الكاشير */
+    const cmds = () => { const s = read() || {}; return s._cmds || []; };
+    const read = () => { try { return JSON.parse(localStorage.getItem(SKEY) || 'null'); } catch (e) { return null; } };
+    return {
+      name: 'local',
+      info: () => 'مرآة محلية على هذا الجهاز',
+      pushState: s => { const old = read() || {}; s._cmds = old._cmds || []; return write(Object.assign({}, s, { _via: 'local' })); },
+      getState: () => Promise.resolve(read()),
+      putCmd: c => { const s = read() || {}; s._cmds = (s._cmds || []).filter(x => x.id !== c.id).concat([c]).slice(-20); write(s); if (ch) ch.postMessage({ k: 'cmd', s: c }); return Promise.resolve(true); },
+      getCmds: () => Promise.resolve(cmds().filter(x => !x.done)),
+      ackCmd: id => { const s = read(); if (!s) return Promise.resolve(); s._cmds = (s._cmds || []).filter(x => x.id !== id); return write(s); },
+      subscribe: fn => {
+        const h = () => { const s = read(); if (s) fn(s); };
+        addEventListener('storage', e => { if (e.key === SKEY) h(); });
+        if (ch) ch.onmessage = e => { if (e.data && e.data.k === 'st') fn(e.data.s); };
+        h();
+        return () => { };
+      }
+    };
+  };
+
+  /* ---- 2) تجريبي: بيانات حيّة وهمية لتجربة اللوحة قبل ربط الفايربيز ---- */
+  T.demo = function () {
+    let seed = null, growIndex = 0;
+    const rnd = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+    /* قيم ثابتة حتى لا تقفز الأرقام بين تحديث وآخر (الزيادة بطيئة وطبيعية فقط) */
+    const BASE = 118000 + Math.floor(Math.random() * 60000);
+    const F = i => { const x = Math.sin((i + 1) * 12.9898) * 43758.5453; return x - Math.floor(x); };
+    let grow = 0;
+    function build() {
+      const zones = [{ id: 'classic', name: 'القسم الكلاسيكي', cls: '' }, { id: 'vip', name: 'قسم VIP', cls: 'vip' }];
+      const names = ['PS-01', 'PS-02', 'PS-03', 'PS-04', 'PC-01', 'PC-02', 'PC-03', 'PC-04', 'VP-01', 'VP-02', 'VC-01', 'VC-02'];
+      const n = Number(localStorage.getItem('ezdemo.n') || 0) + 1; localStorage.setItem('ezdemo.n', n);
+      const devices = names.map((nm, i) => {
+        const on = (i + n) % 3 !== 0;
+        const fixed = on && i % 2 === 0;
+        return {
+          id: 'd' + i, name: nm, zone: i < 8 ? 'classic' : 'vip',
+          zoneName: i < 8 ? 'القسم الكلاسيكي' : 'قسم VIP', type: /PS|V/.test(nm) ? 'ps' : 'pc',
+          rate: i < 4 ? 3000 : i < 8 ? 4000 : i < 10 ? 6000 : 8000, on,
+          sess: on ? {
+            id: 's' + i, mode: fixed ? 'fixed' : 'open', startAt: now() - rnd(5, 180) * 60000,
+            endAt: fixed ? now() + rnd(-30, 120) * 60000 : null,
+            left: fixed ? rnd(-30, 120) * 60000 : null, mins: rnd(20, 190),
+            cost: rnd(2000, 30000), timeCost: rnd(2000, 26000), orders: rnd(0, 9000),
+            customer: ['', 'أبو علي', 'حيدر', 'زبون'][rnd(0, 3)], by: ['علي — كاشير', 'المدير', 'رانية'][rnd(0, 2)], paused: false
+          } : null
+        };
+      });
+      const on = devices.filter(d => d.on).length;
+      grow += 300 + Math.floor(F(growIndex++ % 97) * 900);
+      const dayTotal = BASE + grow;
+      return {
+        v: 1, kind: 'pos-state', ts: now(), appVer: '1.2', hall: 'ENTER ZONE — تجريبي',
+        address: 'بغداد — المنصور', phone: '07 000 000 000', currency: 'د.ع', branch: 'demo',
+        nowUser: { name: 'علي — كاشير', uname: 'cashier' }, paused: false,
+        counts: { total: devices.length, on, off: devices.length - on, over: rnd(0, 2), soon: rnd(0, 2), paused: 0, items: 18 },
+        devices, open: devices.filter(d => d.on).map(d => Object.assign({ dev: d.name, zoneName: d.zoneName }, d.sess)),
+        today: mkStat(dayTotal, 0), week: mkStat(Math.round(dayTotal * 5.6), 1), month: mkStat(Math.round(dayTotal * 21), 2),
+        daily: daily(dayTotal), zones: zones.map(z => ({ id: z.id, name: z.name, cls: z.cls, total: devices.filter(d => d.zone === z.id).length, on: devices.filter(d => d.zone === z.id && d.on).length })),
+        closings: closings(dayTotal),
+        log: [{ ts: now() - 60000, kind: 'login', by: 'cashier', msg: 'دخول للنظام', who: 'علي — كاشير' },
+        { ts: now() - 20000, kind: 'open', by: 'cashier', msg: 'فتح جلسة: PS-01 — أبو علي', who: 'علي — كاشير' }],
+        staff: [{ uname: 'admin', name: 'المدير', role: 'admin', perms: ['*'], active: true, lastLogin: now() - 3600000 }],
+        watchers: [{ id: 'u1', uname: 'admin', name: 'المدير', role: 'admin', perms: ['*'], active: true, salt: 's', rounds: 2, hash: derive('demo1234', 's', 2), mustChange: false }],
+        acks: [], target: 200000, invoiceCount: 42
+      };
+    }
+    function mkStat(t, k) {
+      const j = i => F(i + (k || 0) * 13.7);
+      return {
+        total: t, time: Math.round(t * .62), cafe: t - Math.round(t * .62), refund: Math.round(t * .02 * (0.5 + j(1))), discount: Math.round(t * .03 * (0.5 + j(2))),
+        sessions: Math.max(3, Math.round(t / 5200)), invoices: Math.max(2, Math.round(t / 2600)), minutes: Math.round(t / 65), refundsCount: Math.round(j(3) * 3),
+        items: [['مشروب غازي', 24, 18000], ['شاي', 40, 20000], ['برجر', 12, 42000], ['أركيلة معسل', 9, 36000], ['بطاطس', 15, 22500], ['قهوة تركية', 11, 11000]].map(x => ({ name: x[0], qty: x[1], rev: x[2] })),
+        devicesRev: [['PS-01', 18000], ['PC-02', 14000], ['VP-01', 26000], ['PS-03', 9000]].map(x => ({ name: x[0], rev: x[1] })),
+        cats: { 'مشروبات': Math.round(t * .2), 'أراكيل': Math.round(t * .12), 'طعام': Math.round(t * .06) },
+        hourly: (() => { const a = new Array(24).fill(0); const hh = new Date().getHours(); for (let h = 9; h <= hh; h++) a[h] = Math.round(t * (0.03 + 0.05 * F(h))); return a; })(),
+        payments: { 'نقدي': Math.round(t * .8), 'بطاقة': Math.round(t * .2) }
+      };
+    }
+    function daily(t) {
+      const out = [];
+      for (let i = 0; i < 40; i++) {
+        const total = i === 0 ? t : Math.round(t * (0.72 + 0.52 * F(i)));
+        const time = Math.round(total * .62);
+        out.push({
+          day: dayKey(now() - i * 86400000), ts: now() - i * 86400000, total, time, cafe: total - time,
+          refund: Math.round(total * 0.02 * F(i + 3)), discount: Math.round(total * 0.03 * F(i + 7)),
+          sessions: Math.max(3, Math.round(total / 5200)), invoices: Math.max(2, Math.round(total / 2600)),
+          minutes: Math.round(total / 65), items: 6 + Math.round(F(i + 11) * 12)
+        });
+      }
+      return out;
+    }
+    function closings(t) {
+      return [1, 2, 3].map(i => {
+        const total = Math.round(t * (0.8 + 0.4 * F(i))), cash = Math.round(total * (0.985 + 0.03 * F(i + 5))) - total < 0 ? total : total - Math.round(total * 0.01);
+        return { id: 'c' + i, ts: now() - i * 86400000, day: dayKey(now() - i * 86400000), total, cash, diff: cash - total, note: '', by: 'admin', byName: 'المدير', stats: { total, time: Math.round(total * .62), cafe: Math.round(total * .38), refund: 0, sessions: Math.round(total / 5200), invoices: Math.round(total / 2600) } };
+      });
+    }
+    const timer = setInterval(() => { const keep = seed || {}; seed = build(); if (keep.paused) { seed.paused = true; seed.pauseBy = keep.pauseBy; seed.pauseAt = keep.pauseAt; seed.pauseNote = keep.pauseNote; } seed._cmds = keep._cmds || []; }, 2000);
+    return {
+      name: 'demo',
+      info: () => 'وضع تجريبي — بيانات وهمية تتحدث كل ثانيتين',
+      pushState: s => { seed = s; return Promise.resolve(true); },
+      getState: () => Promise.resolve(seed || (seed = build())),
+      putCmd: c => {
+        c.done = true; seed._cmds = (seed._cmds || []).concat([c]).slice(-10);
+        const a = String(c.action || '').toLowerCase();
+        if (a === 'pause' || a === 'stop') { seed.paused = true; seed.pauseBy = c.by || 'لوحة المراقبة'; seed.pauseAt = now(); seed.pauseNote = c.note || 'أوقفت اللوحة النظام (وضع تجريبي)'; }
+        if (a === 'resume' || a === 'start') { seed.paused = false; seed.pauseNote = ''; }
+        if (a === 'msg') { seed.log = [{ ts: now(), kind: 'note', by: c.by || '', msg: '📣 ' + (c.note || ''), who: c.by || '' }].concat(seed.log || []); }
+        bus.emit('cmd', c);
+        return Promise.resolve(true);
+      },
+      getCmds: () => Promise.resolve([]), ackCmd: () => Promise.resolve(),
+      subscribe: fn => { const t = setInterval(() => fn(seed), 2000); fn(seed || (seed = build())); return () => clearInterval(t); }
+    };
+  };
+
+  /* ---- 3) فايربيز: Realtime Database عبر REST ---- */
+  T.firebase = function (cfg) {
+    const base = (cfg.firebase.databaseURL || '').replace(/\/+$/, '');
+    let tok = null, tokTo = 0;
+    const err = m => { const e = new Error(m); e.cloud = true; return e; };
+    if (!base || !cfg.firebase.apiKey) throw err('ضع رابط قاعدة البيانات ومفتاح API في هذا الملف');
+    const path = p => base + '/enterzone/' + encodeURIComponent(CFG.branch) + p + '.json';
+    async function req(method, p, body) {
+      const res = await fetch(path(p), {
+        method, headers: { 'Content-Type': 'application/json' },
+        body: body === undefined ? undefined : JSON.stringify(body)
+      }
+      );
+      if (res.status === 401 || res.status === 403) {
+        const msg = (await res.text().catch(() => '')).slice(0, 90);
+        throw err(/Permission denied/.test(msg) ? 'قواعد Firebase تمنع الاتصال المباشر. طبّق ملف firebase-rules.json مرة واحدة.' : ('مرفوض من فايربيز: ' + (msg || res.status)));
+      }
+      if (!res.ok) throw err('استجابة غير متوقعة (' + res.status + ')');
+      const txt = await res.text();
+      try { return txt === 'null' ? null : JSON.parse(txt); } catch (e) { return null; }
+    }
+    const subs = new Set(); let loop = null;
+    async function poll() { try { const s = await req('GET', '/state'); if (s) subs.forEach(f => f(s)); } catch (e) { lastErr = e.message; } }
+    let lastErr = '';
+    return {
+      name: 'firebase',
+      info: () => 'اتصال مباشر بقاعدة البيانات',
+      error: () => lastErr,
+      pushState: s => req('PUT', '/state', s),
+      getState: () => req('GET', '/state'),
+      putCmd: c => req('PUT', '/cmd/' + c.id, c),
+      getCmds: () => req('GET', '/cmd').then(o => o ? Object.keys(o).map(k => o[k]) : []),
+      ackCmd: id => req('DELETE', '/cmd/' + id),
+      subscribe: fn => {
+        subs.add(fn);
+        if (!loop) { poll(); loop = setInterval(poll, Math.max(1, CFG.pollSec) * 1000); }
+        return () => { subs.delete(fn); if (!subs.size && loop) { clearInterval(loop); loop = null; } };
+      }
+    };
+  };
+
+  /* ---- 4) فايربيز Firestore (REST) — نفس المسارات: enterzone/<branch>/state + cmd/<id> ---- */
+  T.firestore = function (cfg) {
+    const f = cfg.firebase || {};
+    if (!f.projectId || !f.apiKey) throw new Error('يحتاج projectId و apiKey في config.js');
+    const db = f.database || '(default)';
+    const api = (f._firestore || 'https://firestore.googleapis.com') + '/v1/projects/' + encodeURIComponent(f.projectId) +
+      '/databases/' + encodeURIComponent(db) + '/documents';
+    let lastErr = '';
+    async function tok() {
+      if (AUTH.sess) return await AUTH.token();
+      throw new Error('لازم تسجّل الدخول بحساب فايربيز أولًا');
+    }
+    const url = (p, q) => api + p + (p.indexOf('?') >= 0 ? '&' : '?') + 'key=' + encodeURIComponent(cfg.firebase.apiKey) + (q || '');
+    /* تحويل JSON ←→ بنية Firestore */
+    function val(v) {
+      if (v === null || v === undefined) return { nullValue: null };
+      if (typeof v === 'boolean') return { booleanValue: v };
+      if (typeof v === 'number') return Number.isInteger(v) ? { integerValue: String(v) } : { doubleValue: v };
+      if (typeof v === 'string') return { stringValue: v };
+      if (Array.isArray(v)) return { arrayValue: { values: v.map(val) } };
+      if (typeof v === 'object') return { mapValue: { fields: Object.keys(v).reduce((a, k) => (a[k] = val(v[k]), a), {}) } };
+      return { stringValue: String(v) };
+    }
+    function unval(v) {
+      if (v == null) return null;
+      if ('nullValue' in v) return null;
+      if ('booleanValue' in v) return v.booleanValue;
+      if ('integerValue' in v) return Number(v.integerValue);
+      if ('doubleValue' in v) return Number(v.doubleValue);
+      if ('stringValue' in v) return v.stringValue;
+      if (v.timestampValue) return Math.round(new Date(v.timestampValue).getTime());
+      if (Array.isArray(v)) return v.map(unval);
+      if (v.arrayValue) return (v.arrayValue.values || []).map(unval);
+      if (v.mapValue) { const o = {}; Object.keys(v.mapValue.fields || {}).forEach(k => o[k] = unval(v.mapValue.fields[k])); return o; }
+      return null;
+    }
+    const doc = d => ({ fields: Object.keys(d || {}).reduce((a, k) => (a[k] = val(d[k]), a), {}) });
+    async function req(method, path, body) {
+      const t = await tok();
+      const r = await fetch(url(path, '&auth_token=' + encodeURIComponent(t)), {
+        method, headers: { 'Content-Type': 'application/json' },
+        body: body === undefined ? undefined : JSON.stringify(body)
+      });
+      const txt = await r.text();
+      if (r.status === 401 || r.status === 403) throw new Error('مرفوض من قواعد Firestore — الصق قواعد fireStore.rules في المشروع');
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + txt.slice(0, 90));
+      try { return txt ? JSON.parse(txt) : null; } catch (e) { return null; }
+    }
+    const subs = new Set(); let loop = null;
+    async function poll() {
+      try {
+        const j = await req('GET', '/' + CFG.branch + '/state');
+        const st = j && j.fields ? unval({ mapValue: { fields: j.fields } }).v : null;
+        if (st) subs.forEach(fn => fn(st));
+      } catch (e) { lastErr = e.message; }
+    }
+    return {
+      name: 'firestore',
+      info: () => 'Firestore — ' + f.projectId + ' / enterzone/' + CFG.branch,
+      error: () => lastErr,
+      pushState: st => req('POST', '/' + CFG.branch + '/state?updateMask.fieldPaths=v', doc({ v: st, ts: (st && st.ts) || now() })),
+      getState: async () => { const j = await req('GET', '/' + CFG.branch + '/state'); return j && j.fields ? unval({ mapValue: { fields: j.fields } }).v : null; },
+      putCmd: c => req('POST', '/' + CFG.branch + '/cmd/' + encodeURIComponent(c.id) + '?updateMask.fieldPaths=c', doc({ c, ts: now() })),
+      getCmds: async () => {
+        const j = await req('GET', '/' + CFG.branch + '/cmd?pageSize=30');
+        return ((j && j.documents) || []).map(d => unval({ mapValue: { fields: d.fields } }).c).filter(Boolean);
+      },
+      ackCmd: id => req('DELETE', '/' + CFG.branch + '/cmd/' + encodeURIComponent(id)),
+      subscribe: fn => {
+        subs.add(fn);
+        if (!loop) { poll(); loop = setInterval(poll, Math.max(1, CFG.pollSec) * 1000); }
+        return () => { subs.delete(fn); if (!subs.size && loop) { clearInterval(loop); loop = null; } };
+      },
+      stop() { if (loop) clearInterval(loop); loop = null; subs.clear(); }
+    };
+  };
+
+  /* ================== الواجهة العامة ================== */
+  let TX = null, mode = CFG.mode;
+  function build() {
+    const m = CFG.mode || 'off';
+    if (m === 'off') { TX = null; ST.on = false; ST.mode = 'off'; ST.error = 'لم يُضبط الاتصال بعد — اختر الوضع من زر «ضبط الاتصال» (التجريبي يعرض بيانات وهمية فورًا)'; return null; }
+    try {
+      TX = (m === 'firebase' ? T.firebase(CFG) : m === 'firestore' ? T.firestore(CFG) : m === 'demo' ? T.demo() : T.local()) || T.local();
+      ST.on = true; ST.error = ''; ST.mode = m; ST.info = TX.info ? TX.info() : m;
+    } catch (e) {
+      TX = null; ST.on = false; ST.error = e.message || 'إعداد الاتصال غير مكتمل'; ST.mode = m;
+    }
+    mode = m;
+    return TX;
+  }
+  const ST = { on: false, mode: CFG.mode, error: '', info: '' };
+  build();
+
+  w.EZCloud = {
+    get cfg() { return CFG; },
+    get st() { return ST; },
+    auth: AUTH, bus,
+    isAuthed: () => !!AUTH.sess && AUTH.sess.exp > Date.now(),
+    login: (email, pw) => AUTH.signIn(email, pw),
+    signOut: () => AUTH.signOut(),
+    who: () => AUTH.who(),
+    tx: () => TX,
+    configure(patch) { CFG = mergeCfg(CFG, patch || {}); build(); return ST; },
+    save(cfgObj) { try { localStorage.setItem(LS, JSON.stringify(cfgObj || CFG)); return true; } catch (e) { return false; } },
+    reset() { try { localStorage.removeItem(LS); return true; } catch (e) { return false; } },
+    setBranch(b) { CFG.branch = b || 'main'; build(); },
+    derive, checkPw, sha256,
+    transportName: () => (TX && TX.name) || 'off',
+    /* قراءة مسار خام داخل فرع الصالة — لتشخيص القواعد */
+    async raw(path) {
+      const t = this.tx();
+      if (!t || t.name !== 'firebase') throw new Error('الوضع ليس فايربيز');
+      const tk = AUTH.sess ? await AUTH.token() : await (async () => { throw new Error('سجّل الدخول أولًا'); })();
+      const base = String(CFG.firebase.databaseURL || '').replace(/\/+$/, '');
+      const r = await fetch(base + '/enterzone/' + encodeURIComponent(CFG.branch) + path + '.json?auth=' + encodeURIComponent(tk));
+      const txt = await r.text();
+      try { return JSON.parse(txt); } catch (e) { return txt; }
+    },
+    /* الكاشير */
+    pushState: s => TX ? TX.pushState(s) : Promise.reject(new Error('غير متصل')),
+    onCmd: fn => TX && TX.getCmds ? (async () => { const l = await TX.getCmds().catch(() => []); l.forEach(fn); })() : null,
+    ackCmd: id => TX && TX.ackCmd ? TX.ackCmd(id) : Promise.resolve(),
+    /* اللوحة */
+    getState: () => TX ? TX.getState() : Promise.reject(new Error('غير متصل')),
+    sendCmd: async c => { if (!TX) throw new Error('غير متصل'); c.ts = now(); await TX.putCmd(c); return c; },
+    subscribe: fn => TX && TX.subscribe ? TX.subscribe(fn) : () => { }
+  };
+
+  if (w.ezCloudReady) { try { w.ezCloudReady(); } catch (e) { } }
+})(window);
+
+</script>
+<style>
+/* ============ هوية ENTER ZONE ============ */
+:root{
+  --bg:#04060d; --panel:#0a1120; --panel2:#0e1728; --line:rgba(94,234,255,.16);
+  --cyan:#22e6ff; --mag:#ff2ea6; --lime:#b8ff35; --gold:#ffc53d; --red:#ff4d4d;
+  --txt:#eef4ff; --dim:#a8bdd9; --r:14px;
+  --clip:polygon(0 12px,12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px));
+  --ease:cubic-bezier(.22,.9,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{font-family:"Segoe UI",Tahoma,"Noto Kufi Arabic",Arial,sans-serif;color:var(--txt);overflow-x:hidden;
+  background:
+    radial-gradient(1100px 620px at 88% -12%,rgba(255,46,166,.13),transparent 62%),
+    radial-gradient(950px 640px at 8% 112%,rgba(34,230,255,.15),transparent 62%),
+    linear-gradient(178deg,#03050c,#060b16 45%,#03050c)}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input,select{font:inherit;color:var(--txt);background:#0a1120;border:1px solid var(--line);border-radius:11px;padding:11px 12px;outline:none;width:100%}
+input:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(34,230,255,.12)}
+.hidden{display:none!important}
+.mono{font-variant-numeric:tabular-nums;letter-spacing:.4px}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-thumb{background:#1b2942;border-radius:8px}
+
+/* ============ الجذع ============ */
+.wrap{min-height:100%;display:flex;flex-direction:column}
+.rail{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 14px;
+  background:linear-gradient(180deg,rgba(6,10,20,.98),rgba(6,10,20,.86));border-bottom:1px solid var(--line);backdrop-filter:blur(9px)}
+.rail .logo{width:38px;height:38px;flex:0 0 auto;filter:drop-shadow(0 0 12px rgba(34,230,255,.5))}
+.rail .ttl b{display:block;font-size:16px;letter-spacing:2.4px;background:linear-gradient(90deg,#eaf7ff,#22e6ff 55%,#ff2ea6);
+  -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:900}
+.rail .ttl small{display:block;font-size:11px;color:var(--dim);letter-spacing:.6px}
+.rail .sp{flex:1}
+.lamp{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:800;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.11);color:var(--dim);white-space:nowrap}
+.lamp i{width:9px;height:9px;border-radius:50%;background:#55637d;display:block}
+.lamp.on{color:#d6ffec;border-color:rgba(184,255,53,.35)}.lamp.on i{background:var(--lime);box-shadow:0 0 12px var(--lime);animation:pl 1.8s infinite}
+.lamp.warn{color:#ffe9c9;border-color:rgba(255,197,61,.4)}.lamp.warn i{background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.lamp.off{color:#ffc9c9;border-color:rgba(255,77,77,.4)}.lamp.off i{background:var(--red);box-shadow:0 0 12px var(--red)}
+@keyframes pl{50%{opacity:.35}}
+.nav{display:flex;gap:6px;flex-wrap:wrap;padding:8px 12px;border-bottom:1px solid var(--line);background:rgba(6,10,20,.5);overflow-x:auto}
+.nav button{padding:9px 14px;border-radius:10px;font-size:13.5px;font-weight:800;color:var(--dim);white-space:nowrap;border:1px solid transparent}
+.nav button:hover{background:rgba(255,255,255,.06);color:#fff}
+.nav button.on{color:#04060d;background:linear-gradient(135deg,#12d9ff,#6a8dff)}
+main{flex:1;padding:14px 12px 34px;max-width:1180px;margin:0 auto;width:100%}
+.foot{padding:9px 14px;font-size:11.5px;color:#8ea3c2;border-top:1px solid var(--line);display:flex;gap:14px;flex-wrap:wrap;justify-content:center;background:rgba(3,6,12,.9)}
+
+/* ============ عناصر عامة ============ */
+.card{background:linear-gradient(165deg,rgba(20,30,52,.9),rgba(9,14,26,.95));border:1px solid rgba(255,255,255,.07);
+  clip-path:var(--clip);padding:16px;box-shadow:0 18px 46px -24px rgba(0,0,0,.95)}
+.grid{display:grid;gap:12px}.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.g4{grid-template-columns:repeat(auto-fit,minmax(155px,1fr))}
+.kpi{background:linear-gradient(165deg,rgba(22,32,54,.92),rgba(9,14,26,.96));border:1px solid rgba(255,255,255,.08);
+  clip-path:var(--clip);padding:13px 14px;position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--cyan),transparent)}
+.kpi.g::before{background:linear-gradient(180deg,var(--lime),transparent)}
+.kpi.y::before{background:linear-gradient(180deg,var(--gold),transparent)}
+.kpi.m::before{background:linear-gradient(180deg,var(--mag),transparent)}
+.kpi.r::before{background:linear-gradient(180deg,var(--red),transparent)}
+.kpi small{display:block;font-size:11.5px;color:var(--dim);letter-spacing:.4px;font-weight:700}
+.kpi b{display:block;font-size:26px;font-weight:900;margin-top:3px;font-variant-numeric:tabular-nums;
+  background:linear-gradient(180deg,#fff,#cfe6ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kpi.c b{background:linear-gradient(180deg,#8ff2ff,#22e6ff);-webkit-background-clip:text;background-clip:text}
+.kpi.g b{background:linear-gradient(180deg,#dcff8a,#8dff3c);-webkit-background-clip:text;background-clip:text}
+.kpi.y b{background:linear-gradient(180deg,#ffe08a,#ffb43d);-webkit-background-clip:text;background-clip:text}
+.kpi.m b{background:linear-gradient(180deg,#ffa8d8,#ff2ea6);-webkit-background-clip:text;background-clip:text}
+.kpi .sub{font-size:11px;color:var(--dim);margin-top:3px}
+.h{font-size:15px;font-weight:900;letter-spacing:.4px;display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.h .tag{font-size:10.5px;font-weight:800;color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+.note{font-size:12px;color:var(--dim);line-height:1.9}
+.btn{padding:11px 18px;font-weight:800;border-radius:11px;letter-spacing:.4px;transition:.15s;border:1px solid transparent}
+.btn:active{transform:scale(.97)}
+.btn-p{background:linear-gradient(135deg,#12d9ff,#6a8dff 55%,#2ef0ff);color:#02060f}
+.btn-g{background:linear-gradient(135deg,#a8ff4d,#3ff0c0);color:#04160a}
+.btn-v{background:linear-gradient(135deg,#ffd066,#ff9c2e);color:#241300}
+.btn-d{background:linear-gradient(135deg,#ff5c5c,#c81e3a);color:#fff}
+.btn-o{background:linear-gradient(180deg,#111c30,#0b1220);border:1px solid rgba(255,255,255,.12);color:#dce8ff}
+.btn-o:hover{border-color:var(--cyan)}
+.btn-sm{padding:8px 12px;font-size:12.5px}
+.row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.sp{flex:1}
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th{text-align:start;padding:9px 10px;font-size:11.5px;color:#9fb6d6;background:linear-gradient(180deg,#14213a,#0d1526);
+  position:sticky;top:0;z-index:2;white-space:nowrap}
+.tbl td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:middle}
+.tbl tr:hover td{background:linear-gradient(90deg,rgba(34,230,255,.1),transparent)}
+.tbl .num{text-align:end;font-variant-numeric:tabular-nums}
+.pill{display:inline-block;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--dim)}
+.pill.ok{color:#dcffb0;border-color:rgba(184,255,53,.35);background:rgba(184,255,53,.08)}
+.pill.no{color:#ffc9c9;border-color:rgba(255,77,77,.4);background:rgba(255,77,77,.08)}
+.pill.vip{color:#ffe6ae;border-color:rgba(255,197,61,.4);background:rgba(255,197,61,.08)}
+.pill.p1{color:#b6f2ff;border-color:rgba(34,230,255,.35);background:rgba(34,230,255,.08)}
+.scrl{overflow:auto;border:1px solid rgba(255,255,255,.08);border-radius:13px;max-height:56vh}
+.bar{height:8px;border-radius:6px;background:#0e1a2e;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--mag))}
+.hr{height:1px;background:var(--line);margin:12px 0}
+.chip{padding:6px 11px;border-radius:999px;font-size:12px;font-weight:700;color:var(--dim);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.chip b{color:var(--cyan)}
+
+/* ============ شاشة الدخول ============ */
+.boot{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:18px;overflow:auto}
+.boot-bg{position:absolute;inset:0;background:
+  repeating-linear-gradient(115deg,rgba(34,230,255,.05) 0 2px,transparent 2px 44px),
+  radial-gradient(700px 420px at 50% 12%,rgba(34,230,255,.2),transparent 70%),
+  radial-gradient(620px 420px at 82% 92%,rgba(255,46,166,.16),transparent 70%)}
+.boot-card{position:relative;width:min(400px,94vw);text-align:center;padding:26px 22px;border-radius:22px;
+  background:radial-gradient(60% 60% at 50% 36%,rgba(20,30,54,.86),rgba(6,10,20,.96));
+  border:1px solid rgba(255,255,255,.08);box-shadow:0 60px 130px -50px #000;animation:rise .7s var(--ease) both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+.boot-card img{width:86px;height:86px;object-fit:contain;filter:drop-shadow(0 0 22px rgba(34,230,255,.55))}
+.b-ttl{font-size:30px;font-weight:900;letter-spacing:3px;margin-top:6px;
+  background:linear-gradient(95deg,#fff,#8ff0ff 40%,#ff6fbf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.b-sub{font-size:12.5px;color:var(--dim);letter-spacing:.6px;margin-top:4px}
+.b-tag{display:inline-flex;gap:6px;align-items:center;margin-top:10px;font-size:11px;font-weight:800;color:#b6f2ff;
+  border:1px solid rgba(34,230,255,.35);background:rgba(34,230,255,.08);border-radius:999px;padding:4px 11px}
+.b-fld{text-align:start;margin-top:14px}
+.b-fld label{display:block;font-size:11.5px;font-weight:800;color:var(--dim);letter-spacing:.5px;margin-bottom:5px}
+.b-pw{position:relative}.b-pw input{padding-inline-end:48px}
+.b-pw button{position:absolute;inset-inline-end:6px;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,.06)}
+.b-btn{width:100%;margin-top:16px;padding:14px;font-size:16px;font-weight:900;letter-spacing:1.4px;border-radius:13px;color:#02060f;
+  background:linear-gradient(120deg,#12d9ff,#6a8dff 42%,#ff2ea6);box-shadow:0 18px 44px -18px rgba(34,230,255,.85)}
+.b-err{margin-top:12px;font-size:12.5px;font-weight:800;color:#ffd6d6;background:rgba(255,77,77,.13);
+  border:1px solid rgba(255,77,77,.42);border-radius:11px;padding:9px 11px;text-align:start}
+.b-quick{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.b-mini{font-size:11px;color:#8ea3c2;margin-top:12px;line-height:1.9}
+.b-mini b{color:var(--cyan)}
+.badge-mode{position:absolute;top:14px;inset-inline-end:14px;font-size:10px;font-weight:900;letter-spacing:.6px;color:#ffe6ae;
+  border:1px solid rgba(255,197,61,.45);background:rgba(255,197,61,.12);border-radius:999px;padding:3px 9px}
+
+/* ============ شبكة الأجهزة ============ */
+.leds{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:9px}
+.zoneline{margin:14px 0 8px;font-size:13px;font-weight:900;letter-spacing:.6px;color:var(--cyan);display:flex;align-items:center;gap:8px}
+.zoneline.vip{color:var(--gold)}
+.dev{position:relative;padding:11px 12px;border-radius:13px;border:1px solid rgba(255,255,255,.08);overflow:hidden;
+  background:linear-gradient(170deg,rgba(22,32,54,.92),rgba(8,13,24,.96))}
+.dev.on{border-color:rgba(184,255,53,.3);box-shadow:inset 0 0 26px -14px var(--lime)}
+.dev.over{border-color:rgba(255,77,77,.5);box-shadow:inset 0 0 26px -12px var(--red);animation:over 1.6s ease-in-out infinite}
+@keyframes over{50%{box-shadow:inset 0 0 34px -8px var(--red)}}
+.dev .nm{font-weight:900;font-size:14.5px;letter-spacing:.4px;display:flex;align-items:center;gap:7px}
+.dev .st{font-size:10.5px;color:#7f93b3;letter-spacing:.4px}
+.dev.on .st{color:var(--lime)}.dev.over .st{color:#ffb3b3}
+.dev .t{font-size:19px;font-weight:900;font-variant-numeric:tabular-nums;margin-top:4px}
+.dev .c{font-size:12px;color:var(--dim);margin-top:2px}
+.dev .bdg{position:absolute;top:8px;inset-inline-end:9px;font-size:9px;font-weight:900;color:#ffe6ae;background:rgba(255,197,61,.16);
+  border:1px solid rgba(255,197,61,.4);border-radius:999px;padding:1px 7px}
+.bulb{width:10px;height:10px;border-radius:50%;background:#42506b;flex:0 0 auto}
+.dev.on .bulb{background:var(--lime);box-shadow:0 0 12px var(--lime)}
+.dev.over .bulb{background:var(--red);box-shadow:0 0 12px var(--red)}
+
+/* ===== تنبيهات وأزرار التحكم ===== */
+.alert{border:1px solid rgba(255,77,77,.4);background:rgba(255,77,77,.09);border-radius:13px;padding:11px 13px;font-size:13px;font-weight:800;color:#ffd6d6}
+.alert.ok{border-color:rgba(184,255,53,.35);background:rgba(184,255,53,.08);color:#dcffb0}
+.alert.info{border-color:rgba(34,230,255,.35);background:rgba(34,230,255,.08);color:#c5f5ff}
+.danger-zone{border:1px solid rgba(255,46,166,.35);background:linear-gradient(165deg,rgba(255,46,166,.09),rgba(9,14,26,.94));
+  clip-path:var(--clip);padding:16px}
+.paused-hero{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px;border-radius:16px;border:1px solid rgba(255,77,77,.5);
+  background:linear-gradient(140deg,rgba(255,77,77,.16),rgba(9,14,26,.9));box-shadow:0 0 60px -22px var(--red)}
+.paused-hero b{font-size:19px;letter-spacing:.6px}
+
+/* ============ النوافذ ============ */
+.modal{position:fixed;inset:0;z-index:70;display:grid;place-items:center;background:rgba(2,4,10,.78);backdrop-filter:blur(4px);padding:16px}
+.mbox{width:min(520px,100%);max-height:92vh;overflow:auto;border-radius:18px;border:1px solid rgba(255,255,255,.11);
+  background:linear-gradient(175deg,rgba(13,20,36,.99),rgba(7,11,20,.99));box-shadow:0 50px 110px -30px #000}
+.mhead{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(34,230,255,.14),transparent)}
+.mhead h3{font-size:17px;font-weight:900;flex:1}
+.mhead .x{width:32px;height:32px;border-radius:9px;background:#182433}
+.mbody{padding:16px}.mfoot{display:flex;gap:9px;justify-content:flex-end;padding:13px 16px;border-top:1px solid var(--line);flex-wrap:wrap}
+.fld{margin-bottom:12px}.fld label{display:block;font-size:12px;font-weight:800;color:var(--dim);margin-bottom:6px;letter-spacing:.4px}
+.two{display:grid;gap:11px;grid-template-columns:1fr 1fr}
+pre.code,textarea.code{direction:ltr;text-align:left;white-space:pre;font-size:11.5px;line-height:1.7;background:#070d18;
+  border:1px solid var(--line);border-radius:11px;padding:11px;overflow:auto;width:100%;resize:vertical;
+  font-family:ui-monospace,Menlo,Consolas,monospace;color:#bfe6ff}
+textarea.code:focus{outline:none;border-color:var(--cyan)}
+
+/* ============ التنبيهات المنبثقة ============ */
+.toasts{position:fixed;bottom:14px;inset-inline-start:14px;z-index:80;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.toast{padding:11px 15px;border-radius:11px;font-weight:800;font-size:13px;background:linear-gradient(180deg,#12203a,#0a1120);
+  border:1px solid rgba(255,255,255,.1);box-shadow:0 18px 40px -16px #000;animation:tin .25s}
+.toast.ok{border-color:rgba(184,255,53,.4);color:#dcffb0}.toast.err{border-color:rgba(255,77,77,.45);color:#ffc0c0}
+.toast.info{border-color:rgba(34,230,255,.4);color:#b6f2ff}
+@keyframes tin{from{transform:translateX(-20px);opacity:0}}
+.spin{width:15px;height:15px;border-radius:50%;border:2px solid rgba(255,255,255,.25);border-top-color:var(--cyan);animation:sp .9s linear infinite;display:inline-block}
+@keyframes sp{to{transform:rotate(360deg)}}
+.pulse{animation:pu 2s ease-in-out infinite}@keyframes pu{50%{opacity:.5}}
+@media (max-width:640px){.rail .ttl small{display:none}main{padding:12px 9px 30px}.kpi b{font-size:22px}}
+
+/* ===== واجهة هاتف مخصصة للوحة المراقبة ===== */
+body{background:#050912}
+.wrap{width:min(100%,560px);margin:0 auto;background:linear-gradient(180deg,#07101d,#04070d);box-shadow:0 0 80px rgba(0,0,0,.55)}
+.rail{padding:10px 12px;min-height:62px}
+.rail .logo{width:34px;height:34px}.rail .ttl b{font-size:14px}.rail .ttl small{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav{position:fixed;z-index:55;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,560px);height:70px;padding:7px max(8px,env(safe-area-inset-right)) calc(7px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(6,1fr);gap:4px;flex-wrap:nowrap;background:rgba(5,9,18,.96);border-top:1px solid rgba(34,230,255,.2);border-bottom:0;backdrop-filter:blur(18px)}
+.nav button{min-width:0;padding:9px 3px;border-radius:12px;font-size:10.5px;overflow:hidden;text-overflow:ellipsis}
+.nav button.on{background:linear-gradient(145deg,#19dcff,#73a0ff);box-shadow:0 8px 24px -12px #22e6ff}
+main{padding:14px 11px calc(90px + env(safe-area-inset-bottom));max-width:560px}
+.foot{display:none}.card{padding:14px;border-radius:18px;clip-path:none}.kpi{clip-path:none;border-radius:16px}.g2,.g3,.g4{grid-template-columns:1fr 1fr}.leds{grid-template-columns:1fr 1fr}
+.btn{min-height:44px}.scrl{max-height:none}.empty-state{text-align:center;padding:32px 18px}
+.boot{padding:max(14px,env(safe-area-inset-top)) 14px max(14px,env(safe-area-inset-bottom))}.boot-card{width:min(390px,100%);padding:24px 18px}.boot-card img{width:72px;height:72px}.b-ttl{font-size:27px}
+@media (max-width:380px){.rail .ttl{display:none}.g2,.g3,.g4,.leds{grid-template-columns:1fr}.nav button{font-size:9.5px}.lamp{padding:6px 9px}}
+@media (min-width:561px){body{padding:18px 0}.wrap{min-height:calc(100vh - 36px);border:1px solid rgba(255,255,255,.08);border-radius:26px;overflow:hidden}.nav{bottom:18px;border-radius:0 0 25px 25px}}
+
+</style>
+</head>
+<body>
+
+<!-- ============ شاشة الدخول ============ -->
+<div id="boot" class="boot">
+  <div class="boot-bg"></div>
+  <div class="boot-card">
+    <span id="modeBadge" class="badge-mode">…</span>
+    <img src="data:image/png;base64,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" alt="ENTER ZONE">
+    <div class="b-ttl">ENTER ZONE</div>
+    <div class="b-sub">لوحة المراقبة — القراءة الحيّة لصالونك</div>
+    <div class="b-tag"><span class="pulse">◉</span><span id="connTxt">جارٍ فحص الاتصال…</span></div>
+    <form id="loginForm" autocomplete="on">
+    <div class="b-fld">
+      <label for="u">اسم المستخدم</label>
+      <input id="u" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="admin">
+    </div>
+    <div class="b-fld">
+      <label for="p">كلمة المرور</label>
+      <div class="b-pw"><input id="p" type="password" autocomplete="current-password" placeholder="••••••••">
+        <button type="button" id="eye" title="إظهار/إخفاء">👁</button></div>
+    </div>
+    <div id="err" class="b-err hidden"></div>
+    <button type="button" id="go" class="b-btn">دخول اللوحة</button>
+    </form>
+    <div class="b-quick" id="quick"></div>
+    <p class="b-mini">سجّل الدخول بحساب Firebase المصرّح به.<br>
+      تعرض اللوحة حالة النظام مباشرة، ولا تسمح بتعديل الأسعار أو حذف الفواتير.<br>
+      <span id="stat"></span></p>
+  </div>
+</div>
+
+<!-- ============ التطبيق ============ -->
+<div id="app" class="wrap hidden">
+  <header class="rail">
+    <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAASO0lEQVR4nO2dWZAURRrH/0UQhvWg8jyy67UqKorKIQhyinix3ru6hrqCcqOAghwiglwCgtxyiMjuauyKggcqIIfDraAiyCEiahA8E77UizG5D901nZVV3VPdXZX5ZfX3i5iY6e6Bycr8/7/vy6ysKqf5OecJWExz93zHdBtqnT+8363VkGOrAVj49LDRCNYZgIVPH5uM0Mx0A8qBxW8HNo2TFRnApg5lglDPBqQNwMLPDlSNQLYEYvFnC6rjSS4DUO0oJjkoZQNSGYDFXxtQGmcyBqDUKUz6UBlv4yUQlY5gzGGyJDKaAVj8DGBWB8YMwOJnZEzpQXsJxMJnmkJnSaQ1A7D4mTjo1Ik2A7D4mXLQpRctBmDxM5WgQzepG4DFz1RD2vpJ1QAsfiYJ0tRRagZg8TNJkpaeUjEAi59JgzR0lbgBWPxMmiStr0QNwOJndJCkzhIzAIuf0UlSekvEACx+xgRJ6K5qA7D4GZNUq7+qNsOx+Jum79pvhSNyXezke9qRetyBkN4Xoc/X/qMd93EMKt1AV7EBWPxB7vzgO+F3SFjwlRmglDH++1h77n+FSkxQkQFY/MDt6w8KIEK0+c/l95M2gIPw773zRIeaHxOgfBOwAWJy20ffRws+hgH812kaQP29fz95U82NEaDBALUk/ls/PiTCYqvcAP7rJAxQ7Hei3vtXv441M2ZAeSYoywC1Iv5enxwSxaNteQb45IEbquqzh/6zXwSyR4zoH3gt/V9rasgIcU0Q2wC1IP6eGwrCB0qVHOH6/rP7rtfaP4+s+UoUa1PgNRB4HwDe7l8bRohjAjYAgB6fHi5S3+e/Rxhg4z1tSPXHo6v3RRsC/mvlfQG89XQnUseQNIkZIKvi7/7Z4SaiaP573gCb+15nRT88tmpv7rjyr0stpzpCYNWAm604rkpoygRNGiCL4u/2+Q+BiJ/72f8eFMmWu6+1+vgfX7VXxJ2/vDkwm0YoZYKSBsia+LvmhQ80vVqz9S67ha/yz5V7CsfexAR+ZQaNUMwENWOAWzb6UT/3upgBtt3ZOjPHHMWTK/ZEzneAYJ+sGNQ5U/1QtgGyIv4um44UL3caXwtsvyPbwlfpt3x3yYDgf7Z8cHaMEGWCSANkRfydNx8JDnJE1Ku//ZpMHGul9F+2W8gdENVHWTZBZg1w8xdHQ7swcz/nXuzoQ0P43tnTdW6LlmdMt+OpZbtL9teyIV1I9Fe1NGkA28XfactRETWA/ns7b7uaxPF5Z0/XAYDbouUZ+WezrQKefmNX0VUjAHhjqP1GkE2QKQN03HJUFFv7BoBdvc2Lv5TYqRhhwNJdInqJOPd96TC7TVDUALaLHwjufZEj1+5brzJ6bOWIm0JZNHDJTmX+VPjMgcCSYbdYqxWgYIJGA9gs/pu2Hgsu7Umf7ellVvhAZYKmkg0GLd4pVPH7ZMEE1hugw7ZjoZoVyJnAtPiTEDEFIwxelM8GCJdFi4fba4JGA9gsfv9n1QR7DYo/DdGaLouGLNpRtK8XPdPVSv0A+RLIRgO033686AmufT1bGRV/WkI1nQ2GLNoRmW0Be03gnHvBhabbUDbtvjweudT5VQ+zwgf0iNO0EYYtqA9lAwBY+Kx9JrDOAG3rj4uolYmvu19ppPNNitFkWTRsQX3kxUMLRthlAqsM0Lb+eGTk2d9Nv/hNR2EK7Rg+vz6wVJr7WWD+yG7WmMAaA9xY/2PkSoQp8ZsWvoopIzzzulwOFcbGFhMYfVB2XG7Y8WNjzwpplV9o7mLv7Ok6iuIHcsKXt1XoJHfRfuEcjANgxLwvS15oRQUrDAAExS5yNwbBga56or8sfIril/FNoMsIcs1vRchXIF8CXb/zROS+lG+6XqFN/NRFXwydZZEc8eXxmjeqO2lfkDZAm10nIpc7v70lffFTmeQmga5jGTHvy8hgNfc5uiYga4A2u05Ervh81+XyVDszS8JX0ZHNRs7dHloZAuiaoLnpBhRDOIVOlH9OiywL30fHtQfqOKlnjKlBMgNctzs6+h/snE70t7nOr5Q0jTDqte1CFb4jgDmje5DLAuQMcO2en0J7fADg+5uTF38tRP2mSMv8z83ZFlkKUTMB2WVQ4TiNX0mL36ZlzbRJa9n0ted7OOpWibTL2EogZYDWe34SAkCa/cTCDyOfREvaCKrwR8/aRsoGpAwgHOksb/7rUKe/JBL9KZ/FpULSZ5PVcsfJn8KkBBkDXLP3pAAKpU9ScLlTPklnA1X4L7y6lYwLyBhAOMp2B8fB4SqiPwu/OpIqi2aPKWQBivMAEga4et/Jwma3BII/Cz85kiiLQo+FEgJjZ24hYQUSBghHf+CHjpeVbQWu89Ojmmzw6gs9HSC4a5QKxg3Q6uufA9FfNUMcuNzRQzVlUdSJsXEzzGcB4wYAwhPfox3iR38Wvn4qKYtmju3l+KUQpXmAUQNcuf9noU58k1wBYujiG2H8dLNZgEgGKJQ9x9pfyg7IKDPGFbIAFYwZ4Ir9p4RQriHSfYkjYw5/QuwIgQnTvjBmCeMZQDSeJnFwvB1H/6wzfXwvh9JKkLHrAfxoTykdxqXu6GmyrT5zVUsrggiVRhrJAJcfOFX10qcJ6o6eFpTFD9jRRnWoHSEwcepmI202YoAo0Z9oewlpC1AXlQrl9k6dcKsjzwFMYvySSBsiP5M+pkphQxnAsWrNn3I0LQXldssnxUzOA7Ub4NLvfgkcrnAc/HQj7fKHSZ4pE3sHrxUQwKQp+ucBRkogLnsYgMYKoPYMYEvZw+jF1ITY+BzABkPYsrauQr3dFFaCtBrg4oO/hg71VJuLSA8Skx4vT7otdLXY5Jc3aXWDmQwgfdkC9WiqYkt7Ta8CaZ0E27z9ASiIivLyoi3CVzF1twheBaoAW0VGEdO3SdGcAXK6MX36m6FFzZRAPjas/DB6MF0Oa5sE/+nwb0LdBPfbtX9mJ9Q4Eyf3cdRtEVNf2qjNFsYuiLF9HsBkA20lUJbKnpkTPiM7iRk77Q7rOtrknND4dmiboCx8H7+NNhrBBNpKILn+t+UKMBkbxC9jU3vVOYDOibHxi+IZxiQaM4Bj3SY4H5uiqYwt7ZY3xeneHKdtDnDyZLfQe66uP84wReBJMGMck7UAzwGYmkafARqc8Jcl2LqkaEu7eRWIYQzBGSAmtkRTH5vaWxOrQFnAFxXl5UWbhE8BfQZoyE61xSJLlpq6MRbDqNTEZjj3/uOOt7ZV4Ei9ta2E++AxjqYaWX+2LqS2e1ucMTYGc17YIICgCZ5/9S5t7TE3B7BtN5zlRAlf/cyEEfzyx5Qc9JZAtm4FtZxS4q/k99LA1I1yzWUAy5ZBZbyLZpNdBXJ/HR3o2HJFvf5sndCZCWTBm4iLeg1gsegB2sL38duoGsEGTKwGmVsFamhm1dKoDeKX8S6aLSotaXSWQo70mEQTaFWg+/cjjip8793WVgmLSY55oz8JjL0DgVGz9a0AATwHiIVt0d8W1JIn+3MAwCrhM3oxMQfgDMAYQz0DbOIyWe2zUPfRQ44qfm9NGy4xUqBPm5EV/Tsdy6ALRn0cGvMRc+7W7gBzyzAWnRSzcUkRoN9uCk+KNGMAVfQWLYfaRrnRXNdJMNM3xfUxfx4gL35v9Q1EuiQa6tFURW5vXFHrEv/CkR/nN8DV2BNifNzHDzoBwVsyIfZFRXlZtJhRfXFT2A3qT37lSe8zc/saEQGvAlWAbdlAxuTWZxUKD0qhUXznrxH2VrY13yNMqiwe8ZFwYPZeQDLGDOD2+8ax8eJ4pjrkqO8bYdjrfzUmAhoZAChkgeXtOAtklCXPfth49ReF8gcwbAD3qQPhLCDoeJJJFnW1xxECQw1Gf4BSBhDNGsXvLesQOzy4LVqe8c6ervPOnq5LrW1MAL+/3RYtz8T9N0uf+ZDM0qeM8fsCuQP2OwHBVzAn8AfCN0E5A8PEp5r+jbr2d8j8e4xPAOlkAKUU8hZ3LDtGuC1anuGMkA5+xK9E/MuGrW8cS0rRHyBiAHfgV8FIUOXKkGyEqv4jpqJyJwp14jt4gfnoDxAxQCNqFljYqapYwdmgcmThVyP+5UPXCzniU1oBAggZwB28r6D8BM8PcFlUPkkIX0UufQYuupdE9AcIGQBAWPgNzeDN75xIuOCyqGmSKnd8VgxdJ9SL3SnV/wAxA7jD9+TUn+IdIzgbhEmq3CmGfNeHAYvpRH+AmAEABIWfv2DGe71LonGDy6ICaQl/5ZB1Ql3xMXXrk1I4515woek2hPDmdxaBBeN8WeSO2pFK9KjF8wdpHvObg9cJIHzd01NL7iMV/QGiBgBQiPoNQSO4z9en1olJ1r9USdvsqwZ9INSL24VDU/wAgTPBRVFXgTTsGpUnyVk0gi6Dqxe8UJv4ypDNAADgzb0lIgs0gztme+puyJIRdB3LWwM/CJU+wnHQfynN6A8QNwAAeHO65k0gTY4bHLhjt2npVJvLIp0mXj3g/UDp45ug3xv3kxU/YIEBAMCb1T1ys5xOEwD2ZAPd7V094P3G8ZFN8OQy2uIHKC6DliJw3YADb0ZPLdWlTcumaa7nR/H2gPcDiz2UtjnEwQoDuGO2O6r4jbSDsBGSPosbF1/w8nW+jhBWRH/AkhLIx5vZI/r8wIQtRjqbwvzAZHm25um1kaXPE8sfsEL8gGUGAFAoe/yMkJ8cuxM3GzMBYEaAJg3oXTxLAMB7vS9tfE84jlXiByw0AAB403pFrwxN2mSs83UawfSk3LtkppCv3fZN8PiKB60SP2CpAQDAe6V39GWUDQ7cyRuNGiEtYRoX/mUzgtlXMoH7yxjrxA8ATvNzzhPN3fOtbLz3Sm+hih8AIBy4Uz7PVDYwPd/wLp9epK+bWSt+wHIDAIA3+TYlKknnCQyaAEjGCKajPgB4V04riF/NtqfGWqsdIG8AALDaBJP6FMohoUyOp35q/LgqETEF4QN58QMh4QOAe3Kc8b6thj+830UmDADkTaCIP/dzfrCmbzB+fHHLGNPlDgB4V70izbHy/SmfhT8x3nh/VkvAAEAGTPDS7cHVISVtuzM/MX58pSI7mah/9RR/O2fhTalPsyJ+QCqBfKw3wYt3Fk3ZaHDgzvqYxPHJYqcifADwWk+OnlP5JeXxCST6rxp88QMZNICPN/4u5YSZsqV6zockjpNCuQMA3nUvF+8v4cA9OpFEfyVBSQMAGTLB2LvD5wr8VJ6PbO5r6zNxrJXiXf9S5ElF+bt75KXM9JEsfiDjBgDyJlDFD0ipPT/I89Zl5pjj4LV9Uah9EDnZPTwpU/0SywBAtkwAAN6YvkKN/qF039AM7sK1mTpuFa/9BBGu78OTXff7lzPXD6r4gRIGADJogufvidxNGhUB3cXvZevYbxonIsuciCxQK+IHaswAPt5z9xY5s6mUAMKBu+R/VveB12ls5O7ZKAO4302x+lhLUZEBgOyaAAC8kfeF5wdFlv/Q4MBd/q4VfeF1GRNR35eo8w9MteK4KqWY+IEYBgCybQIA8J69X8QxgPzdXfkOqT7xuj8XNnMTJnC/nkbqGNKglPiBmAYAsm8CAPCGPlTyDGjkd9Eslx3eXqO1f7xbR4bLuJgGcPfNyPxYAk2LH2ADROIN+VvJLRWh/fAlhOi+u6qqfvPuGF6o4ZvISk0ZwN0zs2bGEEjYAEBtmQAAvEEPR58dLcMAud+L+LzEZDTwb0N/U/q82N9V/ra769WaGjcgnviBMg0A1J4JfLwBj4RLjkoMEGM1JvLzmHOTxmhfP6cmxwmIL36gAgMAtWsCGa/fo6IsAzS1GlOlAdytc2t+TIDyxA+wARLDe+yJ6PX2uMuRZRrA3TSfxyACLQYA2ARx8R7uX2QeEc8A7oZF3M8xKVf8QBUGANgEDB0qET9Q5a0RK/2jDJMk1eiw6nuDsgkYk1Srv0RujssmYEyQhO4Suzs0m4DRSVJ6S/T26GwCRgdJ6izx5wOwCZg0SVpfqTwgg03ApEEaukrtCTFsAiZJ0tJTqo9IYhMwSZCmjlJ/RhibgKmGtPWj5SF5bAKmEnToRttTItkETDno0ovWx6SyCZg46NRJVbtBq4F3kjIqJgKksQdlczZgZEzpweiT4tkEDGBWB8ZKIBUuiWoPCgHQaAaQodAZjD6ojDcZAwB0OoVJF0rjTKYEUuGSKHtQEr4PqQwgQ7GzmMqhOp5kM4AMZwN7oSp8HysM4MNGsAfqwvchWwJFYUun1jo2jZNVGUCGswE9bBK+z/8BPJKHA0UzxhcAAAAASUVORK5CYII=" alt="">
+    <div class="ttl"><b>ENTER ZONE</b><small id="hallTxt">لوحة المراقبة</small></div>
+    <span class="lamp" id="lamp"><i></i><span id="lampTxt">…</span></span>
+    <span class="sp"></span>
+    <button class="btn btn-o btn-sm" id="rf">🔄 تحديث</button>
+  </header>
+  <nav class="nav" id="nav"></nav>
+  <main id="view"></main>
+  <footer class="foot">
+    <span id="f1">—</span><span id="f2">—</span><span>ENTER ZONE — لوحة المراقبة 1.0</span>
+    <span id="f3"></span>
+  </footer>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<div id="modal" class="modal hidden"><div class="mbox">
+  <div class="mhead"><h3 id="mT"></h3><button class="x" id="mX">✕</button></div>
+  <div class="mbody" id="mB"></div>
+  <div class="mfoot" id="mF"></div>
+</div></div>
+
+<script>
+/* ═══ مضمّن داخل هذا الملف: monitor.js ═══ */
+/* ============================================================
+   ENTER ZONE — لوحة المراقبة (monitor.js)
+   قراءة فقط: تعرض حالة نظام الكاشير وتستطيع إيقافه/استئنافه بأمر واحد.
+   لا تحتوي على أي دالة تعديل — ولا تُرسِل أي تغيير إلى السحابة.
+   ============================================================ */
+(function (w) {
+  'use strict';
+  const $ = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+  const el = (t, c, h) => { const e = document.createElement(t); if (c) e.className = c; if (h != null) e.innerHTML = h; return e; };
+  const esc = t => String(t == null ? '' : t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const money = n => Math.round(Number(n) || 0).toLocaleString('en-US');
+  const pad = n => String(n).padStart(2, '0');
+  const hhmm = ts => { const d = new Date(ts); return pad(d.getHours()) + ':' + pad(d.getMinutes()); };
+  const hhmmss = ts => { const d = new Date(ts); return pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds()); };
+  const stamp = ts => ts ? (new Date(ts).toLocaleDateString('ar-EG', { day: '2-digit', month: '2-digit' }) + ' ' + hhmm(ts)) : '—';
+  const dur = ms => { if (ms < 0) ms = 0; const s = Math.floor(ms / 1000); return pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s % 3600 / 60)) + ':' + pad(s % 60); };
+  const durAr = ms => { const m = Math.floor(Math.max(0, ms) / 60000); return (m >= 60 ? Math.floor(m / 60) + ' س ' : '') + pad(m % 60) + ' د'; };
+  const CFGKEY = 'enterzone.panel.cfg.v1', MEKEY = 'enterzone.panel.me.v1', CACHE = 'enterzone.panel.cache.v1';
+
+  /* ============ الحالة ============ */
+  const P = {
+    cfg: {
+      mode: 'local',                     // off | local | demo | firebase | firestore
+      loginMode: '',                     // '' = تلقائي: فايربيز للوضع السحابي، وحسابات النظام للمحلي/التجريبي
+      branch: 'main', pollSec: 3,
+      firebase: { apiKey: '', projectId: '', databaseURL: '', authDomain: '', appId: '' },
+      device: { email: '', password: '' },
+      allow: []                          // حسابات فايربيز المسموح لها (لو لم تصل قائمة الصندوق)
+    },
+    tx: null, state: null, user: null, view: 'dash', timer: null, tickT: null, unsub: null,
+    loading: false, err: '', lastFetch: 0, tries: 0
+  };
+  /* إعداد ثابت وآمن: لوحة المشاهدة تتصل بمشروع Firebase المحدد فقط. */
+  if (w.EZCloud && w.EZCloud.cfg) {
+    const fileCfg = w.EZCloud.cfg;
+    P.cfg.mode = 'firebase';
+    P.cfg.loginMode = 'direct';
+    P.cfg.branch = fileCfg.branch || 'main';
+    P.cfg.pollSec = Math.max(2, Number(fileCfg.pollSec) || 3);
+    P.cfg.firebase = Object.assign({}, P.cfg.firebase, fileCfg.firebase || {});
+    P.cfg.device = { email: '', password: '' };
+    P.cfg.allow = Array.isArray(fileCfg.allow) ? fileCfg.allow.slice() : [];
+  }
+  const clouds = m => m === 'firebase' || m === 'firestore';
+  const loginMode = () => P.cfg.loginMode || (clouds(P.cfg.mode) ? 'firebase' : 'program');
+  const allowList = () => {
+    const st = P.state || {};
+    const fromPos = [].concat(st.panelEmails || [], ((st.watchers || []).map(u => (u.femail || '').toLowerCase()).filter(Boolean)));
+    const list = fromPos.length ? fromPos : (P.cfg.allow || []).map(x => String(x).toLowerCase());
+    return [...new Set(list)];
+  };
+  const adminList = () => {
+    const st = P.state || {};
+    const l = (st.panelAdmins && st.panelAdmins.length) ? st.panelAdmins
+      : (st.staff || []).filter(u => (u.perms || []).includes('*')).map(u => (u.femail || '')).filter(Boolean);
+    return [...new Set(l.map(x => String(x).toLowerCase()))];
+  };
+  const canControl = () => {
+    if (!P.user) return false;
+    if (P.user.via === 'direct') return true;
+    if (loginMode() !== 'firebase') return !!(P.user.perms && (P.user.perms.includes('*') || P.user.perms.includes('watch')));
+    const a = adminList();
+    return !a.length ? (allowList().length === 0 || allowList().includes(P.user.email)) : a.includes(P.user.email);
+  };
+  const cur = () => (P.state && P.state.currency) || 'د.ع';
+  const toast = (m, k) => {
+    const t = el('div', 'toast ' + (k || 'info'), esc(m));
+    $('#toasts').appendChild(t);
+    while ($('#toasts').children.length > 3) $('#toasts').removeChild($('#toasts').firstChild);
+    setTimeout(() => { t.style.opacity = '0'; t.style.transition = '.3s'; }, 2600);
+    setTimeout(() => t.remove(), 3000);
+  };
+  function modal(title, body, buttons) {
+    $('#mT').textContent = title; $('#mB').innerHTML = body; $('#mF').innerHTML = '';
+    (buttons || [{ label: 'إغلاق', cls: 'btn-p', on: c => c() }]).forEach(b => {
+      const n = el('button', 'btn ' + (b.cls || 'btn-o'), b.label);
+      n.onclick = () => b.on(close);
+      $('#mF').appendChild(n);
+    });
+    $('#modal').classList.remove('hidden');
+  }
+  const close = () => $('#modal').classList.add('hidden');
+  $('#mX').onclick = close;
+  $('#modal').onclick = e => { if (e.target.id === 'modal') close(); };
+
+  /* ============ الاتصال والنقل ============ */
+  function applyCfg() {
+    if (!w.EZCloud) { P.err = 'ملف ez-cloud.js غير موجود في هذا المجلد'; return null; }
+    EZCloud.configure({
+      mode: P.cfg.mode, branch: P.cfg.branch, pollSec: P.cfg.pollSec, pushSec: P.cfg.pollSec,
+      firebase: P.cfg.firebase, device: P.cfg.device
+    });
+    const t = EZCloud.tx();
+    P.tx = t; P.err = t ? '' : (EZCloud.st.error || 'تعذر تهيئة الاتصال');
+    return t;
+  }
+  function saveCfg() { try { localStorage.setItem(CFGKEY, JSON.stringify(P.cfg)); } catch (e) { } }
+
+  async function fetchState(silent) {
+    const t = P.tx || applyCfg();
+    if (!t) return null;
+    P.loading = true; paintLamp();
+    try {
+      const s = await t.getState();
+      if (s && typeof s === 'object') {
+        P.state = s; P.lastFetch = Date.now(); P.err = ''; P.tries = 0;
+        try { localStorage.setItem(CACHE, JSON.stringify(s)); } catch (e) { }
+        if (!silent) render();
+        paintLamp();
+      } else if (!P.state) P.err = 'لا توجد بيانات بعد في هذا الفرع';
+      return s;
+    } catch (e) {
+      P.err = e.message || 'انقطاع الاتصال'; P.tries++;
+      const cached = localStorage.getItem(CACHE);
+      if (cached && !P.state) { try { P.state = JSON.parse(cached); render(); } catch (x) { } }
+      paintLamp(); if (!silent) toast('✖ ' + P.err, 'err');
+      return null;
+    } finally { P.loading = false; paintLamp(); }
+  }
+  function startLoop() {
+    stopLoop();
+    const sec = Math.max(2, Number(P.cfg.pollSec) || 3);
+    P.timer = setInterval(() => { if (!document.hidden) fetchState(true); }, sec * 1000);
+    P.tickT = setInterval(() => { tickTimers(); }, 1000);
+    if (P.tx && P.tx.subscribe) { try { P.unsub = P.tx.subscribe(s => { if (s) { P.state = s; P.lastFetch = Date.now(); render(); } }); } catch (e) { } }
+  }
+  function stopLoop() {
+    if (P.timer) clearInterval(P.timer); if (P.tickT) clearInterval(P.tickT);
+    P.timer = P.tickT = null;
+    if (P.unsub) { try { P.unsub(); } catch (e) { } P.unsub = null; }
+  }
+  const age = () => (P.state ? Math.max(0, Date.now() - Number(P.state.ts || 0)) : Infinity);
+  const fresh = () => age() < 25000;
+
+  /* ============ الدخول ============ */
+  const watchers = () => (P.state && P.state.watchers) || [];
+  function canWatch(u) { return !!u && u.active !== false && (u.perms || []).some(p => p === '*' || p === 'watch'); }
+  /* دخول عبر Firebase Authentication (بريد + كلمة مرور) */
+  async function fbLogin(email, pw) {
+    const t = applyCfg();
+    if (!t) throw new Error(P.err || 'لا يوجد اتصال — اضبط الوضع على firebase في config.js');
+    if (!/@/.test(email)) throw new Error('اكتب البريد الإلكتروني كاملًا مثل: watch@enterzone.app');
+    await EZCloud.login(email, pw);
+    const whoAm = EZCloud.who();
+    if (P.cfg.authorizedUid && (!whoAm || whoAm.uid !== P.cfg.authorizedUid)) {
+      EZCloud.signOut();
+      throw new Error('هذا الحساب غير مصرح له بفتح لوحة المراقبة');
+    }
+    P.tx = EZCloud.tx();
+    let st = null;
+    try { st = await P.tx.getState(); } catch (e) { st = null; P.err = e.message; }
+    P.state = st || P.state;
+    if (st) { P.lastSeen = Date.now(); try { localStorage.setItem(CACHE, JSON.stringify(st)); } catch (e) { } }
+    const allow = allowList();
+    if (allow.length && !allow.includes(String(whoAm.email).toLowerCase()))
+      throw new Error('حساب ' + whoAm.email + ' غير مسموح له بفتح اللوحة — أضِفه من الكاشير: ☁ الاتصال → بريد لوحة المراقبة');
+    P.user = {
+      email: String(whoAm.email).toLowerCase(), name: (st && st.staff && (st.staff.find(x => (x.femail || '').toLowerCase() === String(whoAm.email).toLowerCase()) || {}).name) || whoAm.email,
+      uname: ((st && st.staff && st.staff.find(x => (x.femail || '').toLowerCase() === String(whoAm.email).toLowerCase())) || {}).uname || whoAm.email.split('@')[0],
+      role: 'panel', perms: [], ctrl: false, via: 'firebase', at: Date.now()
+    };
+    P.user.ctrl = canControl();
+    P.err = '';
+    enter(true);
+    return null;
+  }
+  function restoreSession() {
+    if (loginMode() !== 'firebase' || !EZCloud.isAuthed()) return false;
+    const whoAm = EZCloud.who();
+    if (!whoAm) return false;
+    if (P.cfg.authorizedUid && whoAm.uid !== P.cfg.authorizedUid) { EZCloud.signOut(); return false; }
+    P.tx = applyCfg();
+    if (!P.tx) return false;
+    const allow = allowList();
+    P.user = { email: String(whoAm.email).toLowerCase(), name: whoAm.email, uname: whoAm.email.split('@')[0], role: 'panel', perms: [], ctrl: true, via: 'firebase', at: Date.now() };
+    fetchState(true).then(() => {
+      const a2 = allowList();
+      if (a2.length && !a2.includes(P.user.email)) { P.user = null; EZCloud.signOut(); toast('هذا الحساب غير مسموح له باللوحة', 'err'); location.reload(); return; }
+      P.user.ctrl = canControl();
+      enter(false);
+    });
+    return true;
+  }
+  async function tryLogin(name, pw) {
+    if (loginMode() === 'firebase') return fbLogin(name, pw);
+    const t = applyCfg();
+    if (!t) return '⚠ ' + P.err;
+    const list = watchers();
+    if (!list.length) return 'لا توجد حسابات مصرّح لها بهذه اللوحة في هذا الفرع — أضِف صلاحية «لوحة المراقبة» من نظام الكاشير' + (fresh() ? '' : ' أو تحقق من الاتصال');
+    const u = list.find(x => String(x.uname).toLowerCase() === String(name).toLowerCase().trim());
+    if (!u) {
+      const known = ((P.state && P.state.staff) || []).find(x => String(x.uname).toLowerCase() === String(name).toLowerCase().trim());
+      if (known) return 'حساب «' + known.name + '» لا يملك صلاحية «لوحة المراقبة» — تُضاف من نظام الكاشير: ⚙ الإعدادات ← ☁ الاتصال أو من المستخدمين';
+      return 'اسم المستخدم غير موجود في هذه الصالة';
+    }
+    if (u.active === false) return 'هذا الحساب موقوف — راجع المدير';
+    if (!canWatch(u)) return 'هذا الحساب لا يملك صلاحية «لوحة المراقبة»';
+    if (!EZCloud.checkPw(u, pw)) return 'كلمة المرور غير صحيحة';
+    P.user = { uname: u.uname, name: u.name, role: u.role, perms: u.perms || [], at: Date.now() };
+    localStorage.setItem(MEKEY, JSON.stringify(P.user));
+    enter();
+    return null;
+  }
+  function enter(animate) {
+    $('#boot').classList.add('hidden');
+    $('#app').classList.remove('hidden');
+    buildNav(); startLoop(); render();
+    fetchState(false);
+    toast('مرحبًا ' + (P.user.name || P.user.email || ''), 'ok');
+    if (location.hash === '#pause') setTimeout(() => control('pause'), 600);
+    if (location.hash === '#resume') setTimeout(() => control('resume'), 600);
+  }
+  function signOut() {
+    stopLoop(); P.user = null; localStorage.removeItem(MEKEY);
+    if (EZCloud.auth) { try { EZCloud.signOut(); } catch (e) { } }
+    $('#app').classList.add('hidden'); $('#boot').classList.remove('hidden');
+    $('#p').value = ''; boot();
+  }
+
+  /* ============ بناء شاشة الدخول ============ */
+  function boot() {
+    const badge = $('#modeBadge'), conn = $('#connTxt'), quick = $('#quick'), stat = $('#stat');
+    const fb = loginMode() === 'firebase';
+    $$('.b-fld label')[0].textContent = fb ? 'البريد الإلكتروني (حساب Firebase Authentication)' : 'اسم المستخدم';
+    $('#u').placeholder = fb ? 'watch@enterzone.app' : 'admin';
+    $('#u').type = fb ? 'email' : 'text';
+    $('#u').autocomplete = fb ? 'username' : 'username';
+    $('.b-sub').textContent = fb ? 'مراقبة مباشرة وآمنة عبر Firebase' : 'لوحة المراقبة — القراءة الحيّة لصالونك';
+    $('#go').textContent = fb ? 'دخول بالبريد' : 'دخول اللوحة';
+    /* جلسة فايربيز سارية؟ ادخل مباشرة */
+    if (fb && EZCloud.isAuthed()) { if (restoreSession()) return; }
+    const T = applyCfg();
+    const names = { firebase: 'فايربيز', local: 'مرآة محلية', demo: 'تجريبي', off: 'مطفأة' };
+    badge.textContent = 'اتصال مباشر';
+    quick.innerHTML = '';
+    if (!T) {
+      conn.textContent = 'تعذر الاتصال';
+      if (!$('#bootConnectError')) {
+        const msg = el('div', 'b-err', 'تعذر الوصول إلى Firebase. تحقق من الإنترنت ثم أعد المحاولة.');
+        msg.id = 'bootConnectError'; $('#boot').appendChild(msg);
+      }
+    } else {
+      conn.textContent = 'Firebase جاهز';
+      stat.textContent = 'أدخل بيانات حساب Firebase المصرّح به للمتابعة.';
+    }
+  }
+
+  /* ============ التبويبات ============ */
+  const VIEWS = [
+    ['dash', 'الحالة'], ['devs', 'الأجهزة'], ['sales', 'المبيعات'],
+    ['rep', 'التقارير'], ['staff', 'الموظفون'], ['ctl', 'التحكم']
+  ];
+  function buildNav() {
+    const n = $('#nav'); n.innerHTML = '';
+    VIEWS.forEach(v => {
+      const b = el('button', v[0] === P.view ? 'on' : '', v[1]);
+      b.dataset.v = v[0];
+      b.onclick = () => { P.view = v[0]; $$('#nav button').forEach(x => x.classList.toggle('on', x.dataset.v === v[0])); render(); };
+      n.appendChild(b);
+    });
+  }
+
+  /* ============ العرض ============ */
+  const stat = (s, k) => (s && s[k]) || 0;
+  function render() {
+    if (!P.user) return;
+    const s = P.state, v = $('#view');
+    $('#hallTxt').textContent = (s && s.hall ? s.hall : 'لوحة المراقبة');
+    if (!s) {
+      v.innerHTML = '<div class="card empty-state"><b style="font-size:17px">بانتظار بيانات النظام</b>' +
+        '<p class="note" style="margin-top:8px">' + esc(P.err || 'شغّل نظام الكاشير واتركه متصلًا بالإنترنت، وستظهر البيانات هنا تلقائيًا.') +
+        '</p><div class="row" style="margin-top:12px"><button class="btn btn-p" id="re1">إعادة المحاولة</button></div></div>';
+      const r1 = $('#re1'); if (r1) r1.onclick = () => fetchState(false);
+      paintLamp(); return;
+    }
+    const fns = { dash: viewDash, devs: viewDevs, sales: viewSales, rep: viewReports, staff: viewStaff, ctl: viewCtl };
+    (fns[P.view] || viewDash)(v);
+    v.onclick = bindView;
+    paintLamp(); tickTimers();
+    $('#f1').textContent = 'آخر بث: ' + (s.ts ? hhmmss(Number(s.ts)) : '—') + (fresh() ? ' (مباشر)' : ' (متأخر)');
+    $('#f2').textContent = 'المستخدم: ' + P.user.name;
+    $('#f3').textContent = 'نسخة النظام ' + (s.appVer || '—');
+  }
+  function paintLamp() {
+    const n = $('#lamp'), t = $('#lampTxt'); if (!n) return;
+    let cls = 'off', txt = 'غير متصل';
+    if (P.tx) {
+      if (P.state && fresh()) { cls = 'on'; txt = 'مباشر ' + (age() < 10000 ? 'الآن' : Math.round(age() / 1000) + 'ث'); }
+      else if (P.state) { cls = 'warn'; txt = 'متأخر ' + Math.round(age() / 1000) + 'ث'; }
+      else { cls = 'warn'; txt = 'بانتظار بثّ النظام'; }
+      if (P.loading) txt = '…جارٍ التحديث';
+      if (P.err && !P.state) { cls = 'off'; txt = P.err.slice(0, 26); }
+    } else { cls = 'off'; txt = P.err || 'لا اتصال'; }
+    n.className = 'lamp ' + cls; t.textContent = txt;
+  }
+  function tickTimers() {
+    const s = P.state; if (!s) return;
+    const n = Date.now();
+    $$('[data-end]').forEach(e => {
+      const end = Number(e.dataset.end), left = end - n;
+      e.textContent = (left >= 0 ? '' : '+') + dur(Math.abs(left));
+      const card = e.closest('.dev') || e.closest('tr');
+      if (card) card.classList.toggle('over', left < 0);
+    });
+    $$('[data-since]').forEach(e => { e.textContent = dur(n - Number(e.dataset.since)); });
+    $$('[data-cost]').forEach(e => {
+      const d = s.devices && s.devices.find ? null : null;
+      const rate = Number(e.dataset.rate) || 0, since = Number(e.dataset.since) || 0, end = e.dataset.end ? Number(e.dataset.end) : null;
+      const stopAt = end ? Math.min(n, end) : n;
+      e.textContent = money(Math.round((stopAt - since) / 60000 * rate / 60)) + ' ' + cur();
+    });
+  }
+
+  /* ---------- 1) الحالة ---------- */
+  function viewDash(v) {
+    const s = P.state, c = s.counts || {}, open = (s.devices || []).filter(d => d.on);
+    const tot = c.total || (s.devices || []).length, on = c.on || open.length, off = (c.off != null ? c.off : tot - on);
+    v.innerHTML = `
+      ${(EZCloud.st.mode === 'demo' || (s.branch === 'demo')) ? `<div class="alert info" style="margin-bottom:12px">🧪 وضع تجريبي — هذه بيانات وهمية لتجربة اللوحة. للربط الحقيقي: افتح نظام الكاشير ← ⚙ الإعدادات ← ☁ الاتصال والمراقبة، واكتب بياناتك في monitor/config.js ثم اجعل mode: 'firebase'.</div>` : ''}
+      ${s.paused ? `<div class="paused-hero" style="margin-bottom:12px"><span style="font-size:26px">⛔</span>
+        <div><b>النظام موقوف</b><div class="note">${esc(s.pauseNote || '')} — من ${esc(s.pauseBy || 'لوحة المراقبة')} ${s.pauseAt ? '• ' + stamp(Number(s.pauseAt)) : ''}</div></div>
+        <span class="sp"></span><button class="btn btn-g" data-ctl="resume">▶ استئناف التشغيل</button></div>` : ''}
+      ${!fresh() ? `<div class="alert" style="margin-bottom:12px">⚠ آخر بث من الصندوق قبل ${Math.round(age() / 1000)} ثانية — قد تكون البيانات قديمة (تعذّر الاتصال أو الصندوق مغلق).</div>` : ''}
+      <div class="grid g4" style="margin-bottom:12px">
+        <div class="kpi g"><small>أجهزة مشغّلة الآن</small><b>${on}</b><div class="sub">من أصل ${tot} جهاز • ${off} مطفأ</div></div>
+        <div class="kpi r"><small>مطفأ / متاحة</small><b>${off}</b><div class="sub">${(s.zones || []).map(z => esc(z.name) + ': ' + (z.total - z.on) + ' متاح').join(' • ')}</div></div>
+        <div class="kpi m"><small>انتهى وقتها</small><b>${c.over || 0}</b><div class="sub">${c.over ? 'تحتاج تمديدًا أو إغلاقًا' : 'لا شيء'}</div></div>
+        <div class="kpi y"><small>بقي لها دقائق</small><b>${c.soon || 0}</b><div class="sub">تنبيه مبكر ${esc((s.settings && s.settings.warnBefore) || 3)} د</div></div>
+      </div>
+      <div class="grid g4" style="margin-bottom:12px">
+        <div class="kpi c"><small>إيراد اليوم</small><b>${money(stat(s.today, 'total'))}</b><div class="sub">${cur()} • ${stat(s.today, 'sessions')} جلسة</div></div>
+        <div class="kpi"><small>وقت اللعب</small><b>${money(stat(s.today, 'time'))}</b><div class="sub">${(stat(s.today, 'minutes') / 60).toFixed(1)} ساعة</div></div>
+        <div class="kpi g"><small>الكافتيريا</small><b>${money(stat(s.today, 'cafe'))}</b><div class="sub">${stat(s.today, 'invoices')} فاتورة</div></div>
+        <div class="kpi y"><small>الخصومات والمرتجعات</small><b>${money(stat(s.today, 'refund') + stat(s.today, 'discount'))}</b><div class="sub">خصم ${money(stat(s.today, 'discount'))} • مرات ${money(stat(s.today, 'refund'))}</div></div>
+      </div>
+      ${s.target ? `<div class="card" style="margin-bottom:12px"><div class="row" style="justify-content:space-between">
+          <b>🎯 هدف اليوم</b><span class="note">${money(stat(s.today, 'total'))} من ${money(s.target)} ${cur()}</span></div>
+        <div class="bar" style="margin-top:8px"><i style="width:${Math.min(100, stat(s.today, 'total') / s.target * 100)}%"></i></div></div>` : ''}
+      <div class="card">
+        <div class="h">الجلسات المفتوحة الآن <span class="tag">${open.length}</span><span class="sp"></span>
+          <span class="note">من: ${esc((s.nowUser && s.nowUser.name) || '—')} • فرع ${esc(s.branch || '')}</span></div>
+        ${open.length ? `<div class="scrl"><table class="tbl"><thead><tr><th>الجهاز</th><th>القسم</th><th>الزبون</th><th>الموظف</th><th>النوع</th><th class="num">ثمن الساعة</th><th class="num">الوقت</th><th class="num">الكلفة</th></tr></thead>
+          <tbody>${open.map(d => rowSess(d)).join('')}</tbody></table></div>` : '<p class="note">لا أجهزة مشغّلة الآن.</p>'}
+      </div>
+      <div class="grid g2" style="margin-top:12px">
+        <div class="card"><div class="h">آخر الأحداث</div>${logList((s.log || []).slice(0, 8))}</div>
+        <div class="card"><div class="h">نبض الاتصال</div>
+          <div class="grid g2">
+            <div class="kpi"><small>آخر بث</small><b style="font-size:19px">${s.ts ? hhmmss(Number(s.ts)) : '—'}</b><div class="sub">${fresh() ? 'مباشر' : 'منذ ' + Math.round(age() / 1000) + ' ثانية'}</div></div>
+            <div class="kpi c"><small>حالة النظام</small><b style="font-size:19px">${s.paused ? 'موقوف' : 'يعمل'}</b><div class="sub">${s.paused ? esc(s.pauseBy || '') : 'كل العمليات متاحة'}</div></div>
+          </div>
+          <p class="note" style="margin-top:10px">هذه اللوحة <b>لا تغيّر شيئًا</b> في بيانات الصندوق — تنها تُظهرها وتُرسل أمر إيقاف/استئناف فقط.</p></div>
+      </div>`;
+  }
+  const rowSess = d => {
+    const x = d.sess || {};
+    const left = x.endAt ? (x.left != null ? x.left : x.endAt - Date.now()) : null;
+    return `<tr class="${d.on ? 'busy' : ''}">
+      <td><b>${esc(d.name)}</b></td><td>${esc(d.zoneName || '')}</td>
+      <td>${esc(x.customer || '—')}</td><td>${esc(x.by || '—')}</td>
+      <td>${x.mode === 'fixed' ? '⏱ وقت محدد' : '♾ وقت مفتوح'}${x.paused ? ' <span class="pill no">موقوف مؤقتًا</span>' : ''}</td>
+      <td class="num">${money(x.rate || d.rate)}</td>
+      <td class="num mono" ${x.endAt ? `data-end="${x.endAt}"` : `data-since="${x.startAt}"`}>${left != null ? (left >= 0 ? '' : '+') + dur(Math.abs(left)) : dur(Date.now() - (x.startAt || Date.now()))}</td>
+      <td class="num mono">${money(x.cost || 0)} ${cur()}<span data-cost hidden data-rate="${x.rate || d.rate}" data-since="${x.startAt}"></span></td></tr>`;
+  };
+  const logList = arr => `<div class="scrl" style="max-height:240px;border:none">${(arr || []).length ? arr.map(l => `<div style="display:flex;gap:9px;padding:7px 2px;border-bottom:1px solid rgba(255,255,255,.05);font-size:12.5px">
+      <span class="mono" style="color:var(--cyan);min-width:56px">${hhmm(l.ts)}</span>
+      <span style="flex:1">${esc(l.msg || l.kind)} <small style="color:var(--dim)">— ${esc(l.who || l.by || '')}</small></span></div>`).join('') : '<p class="note">لا أحداث</p>'}</div>`;
+
+  /* ---------- 2) الأجهزة ---------- */
+  function viewDevs(v) {
+    const s = P.state, zones = s.zones && s.zones.length ? s.zones : [{ id: 'x', name: 'الأجهزة', cls: '' }];
+    const devs = s.devices || [];
+    v.innerHTML = `<div class="card" style="margin-bottom:12px"><div class="row">
+      <b style="font-size:16px">🖥 ${devs.filter(d => d.on).length} جهاز يعمل</b>
+      <span class="chip">إجمالي <b>${devs.length}</b></span>
+      <span class="chip g">مطفأ <b>${devs.length - devs.filter(d => d.on).length}</b></span>
+      <span class="sp"></span><button class="btn btn-o btn-sm" id="till">🔔 رنّين تحقق</button>
+      <button class="btn btn-o btn-sm" id="sync">📡 بث فوري</button></div>
+      <p class="note" style="margin-top:8px">اضغط «بث فوري» لتجبر الصندوق على إرسال حالته الآن.</p></div>` +
+      zones.map(z => {
+        const list = devs.filter(d => (d.zone || '') === z.id || (z.id === 'x'));
+        if (!list.length) return '';
+        return `<div class="card" style="margin-bottom:12px">
+          <div class="zoneline ${z.cls === 'vip' ? 'vip' : ''}">${z.cls === 'vip' ? '👑' : '◈'} ${esc(z.name)}
+            <span class="tag">${list.filter(d => d.on).length}/${list.length} يعمل</span></div>
+          <div class="leds">${list.map(devCard).join('')}</div></div>`;
+      }).join('');
+  }
+  const devCard = d => {
+    const x = d.sess || {};
+    const left = x.endAt ? x.endAt - Date.now() : null;
+    return `<div class="dev ${d.on ? (left != null && left < 0 ? 'over' : 'on') : ''}">
+      ${d.rate && !d.on ? `<span class="bdg">${money(d.rate)} /س</span>` : ''}
+      <div class="nm"><span class="bulb"></span>${esc(d.name)}${x.paused ? ' ⏸' : ''}</div>
+      <div class="st">${d.on ? (x.mode === 'fixed' ? (left < 0 ? 'انتهى الوقت' : 'وقت محدد') : 'وقت مفتوح') : 'مطفأ / متاح'}</div>
+      ${d.on ? `<div class="t mono" ${x.endAt ? `data-end="${x.endAt}"` : `data-since="${x.startAt}"`}>${left != null ? (left >= 0 ? '' : '+') + dur(Math.abs(left)) : dur(Date.now() - (x.startAt || Date.now()))}</div>
+        <div class="c">${esc(x.customer || '')}${x.by ? ' • ' + esc(x.by) : ''}</div>
+        <div class="c"><span data-cost data-rate="${x.rate || d.rate}" data-since="${x.startAt}">${money(x.cost || 0)} ${cur()}</span></div>`
+      : `<div class="t mono" style="color:#5d6f8c">--:--:--</div><div class="c">الساعة ${money(d.rate || 0)} ${cur()}</div>`}
+    </div>`;
+  };
+
+  /* ---------- 3) المبيعات ---------- */
+  function viewSales(v) {
+    const s = P.state, t = s.today || {}, items = (t.items || []).slice(0, 20);
+    const devs = (t.devicesRev || []).slice(0, 12);
+    const pay = t.payments || {};
+    v.innerHTML = `<div class="grid g4" style="margin-bottom:12px">
+      <div class="kpi g"><small>مبيعات اليوم</small><b>${money(t.total)}</b><div class="sub">${cur()}</div></div>
+      <div class="kpi c"><small>فواتير الكافتيريا</small><b>${t.invoices || 0}</b><div class="sub">عدد العمليات</div></div>
+      <div class="kpi y"><small>عدد الجلسات</small><b>${t.sessions || 0}</b><div class="sub">مغلقة اليوم</div></div>
+      <div class="kpi m"><small>متوسط الفاتورة</small><b>${money(t.sessions ? t.total / t.sessions : 0)}</b><div class="sub">${cur()} / جلسة</div></div></div>
+      <div class="grid g2">
+        <div class="card"><div class="h">الأكثر مبيعًا اليوم <span class="tag">الكمية</span></div>
+          ${items.length ? `<div class="scrl"><table class="tbl"><thead><tr><th>الصنف</th><th class="num">كمية</th><th class="num">الإيراد</th></tr></thead>
+            <tbody>${items.map(i => `<tr><td>${esc(i.name)}</td><td class="num">${i.qty}</td><td class="num">${money(i.rev)} ${cur()}</td></tr>`).join('')}</tbody></table></div>` : '<p class="note">لا مبيعات بعد.</p>'}</div>
+        <div class="card"><div class="h">أعلى الأجهزة إيرادًا</div>
+          ${devs.length ? `<div class="scrl"><table class="tbl"><thead><tr><th>الجهاز</th><th class="num">وقت اللعب</th></tr></thead>
+            <tbody>${devs.map(i => `<tr><td>${esc(i.name)}</td><td class="num">${money(i.rev)} ${cur()}</td></tr>`).join('')}</tbody></table></div>` : '<p class="note">لا بيانات.</p>'}
+          <div class="hr"></div><div class="h" style="font-size:13px">طرق الدفع</div>
+          ${Object.keys(pay).length ? Object.keys(pay).map(k => `<div class="row" style="justify-content:space-between;font-size:13px;padding:3px 0">
+            <span>${esc(k)}</span><b class="mono">${money(pay[k])} ${cur()}</b></div>`).join('') : '<p class="note">لم تُسجَّل دفعات بعد.</p>'}</div>
+      </div>
+      <div class="card" style="margin-top:12px"><div class="h">توزيع الإيراد بالساعة (اليوم)</div>
+        <div class="row" style="gap:4px;align-items:flex-end;height:120px">
+          ${(t.hourly || new Array(24).fill(0)).map((x, i) => {
+      const mx = Math.max.apply(null, (t.hourly || [1]).concat([1]));
+      return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:14px">
+              <div style="width:100%;height:${Math.round((x / mx) * 92)}px;min-height:2px;border-radius:4px 4px 0 0;
+                background:linear-gradient(180deg,${x ? 'var(--cyan)' : '#1b2942'},${x ? 'var(--mag)' : '#101a2c'})" title="${i}:00 — ${money(x)}"></div>
+              <small style="font-size:8.5px;color:#61748f">${i}</small></div>`;
+    }).join('')}</div></div>
+      <div class="card" style="margin-top:12px"><div class="h">الفواتير والعمليات الأخيرة</div>${logList((s.log || []).filter(l => l.kind === 'sale' || l.kind === 'close'||l.kind === 'refund').slice(0, 16))}</div>`;
+  }
+
+  /* ---------- 4) الجرد والتقارير ---------- */
+  function days(s, n) { return (s.daily || []).slice(0, n); }
+  function viewReports(v) {
+    const s = P.state;
+    const ranges = [['today', 'اليوم', s.today], ['week', 'الأسبوع', s.week], ['month', 'الشهر', s.month]];
+    const daily = days(s, 60);
+    const sum = (arr, k) => arr.reduce((a, x) => a + (Number(x[k]) || 0), 0);
+    const last7 = daily.slice(0, 7), last30 = daily.slice(0, 30);
+    v.innerHTML = `<div class="grid g3" style="margin-bottom:12px">
+      ${ranges.map(r => {
+      const st = r[2] || {};
+      return `<div class="kpi ${r[0] === 'today' ? 'c' : r[0] === 'week' ? 'g' : 'y'}"><small>${r[1]}</small><b>${money(st.total)}</b>
+          <div class="sub">${cur()} • ${st.sessions || 0} جلسة • ${(st.minutes || 0) / 60 | 0} ساعة</div>
+          <div class="note" style="margin-top:4px">وقت ${money(st.time)} • كافتيريا ${money(st.cafe)} • خصم ${money(st.discount)} • مرتجع ${money(st.refund)}</div></div>`;
+    }).join('')}</div>
+      <div class="card" style="margin-bottom:12px"><div class="h">🧮 جرد مبني على سجل الأيام
+        <span class="sp"></span><span class="chip">آخر ٧ أيام <b>${money(sum(last7, 'total'))}</b></span>
+        <span class="chip g">آخر ٣٠ يومًا <b>${money(sum(last30, 'total'))}</b></span></div>
+        <div class="scrl" style="max-height:44vh"><table class="tbl"><thead><tr><th>اليوم</th><th class="num">الإجمالي</th><th class="num">وقت</th><th class="num">كافتيريا</th><th class="num">خصم</th><th class="num">مرتجع</th><th class="num">جلسات</th><th class="num">ساعات</th></tr></thead>
+          <tbody>${daily.length ? daily.map(d => `<tr><td class="mono">${esc(d.day)}</td><td class="num">${money(d.total)}</td><td class="num">${money(d.time)}</td>
+            <td class="num">${money(d.cafe)}</td><td class="num ${d.discount ? 'neg' : ''}">${money(d.discount)}</td><td class="num">${money(d.refund)}</td>
+            <td class="num">${d.sessions || 0}</td><td class="num">${((d.minutes || 0) / 60).toFixed(1)}</td></tr>`).join('')
+        : '<tr><td colspan="8" class="note">لا سجلات يومية بعد — ستظهر أول ما يُغلق الصندوق يومه أو تُحدَّث البيانات.</td></tr>'}</tbody></table></div>
+        <p class="note" style="margin-top:8px">الأسبوع = ${last7.length} يوم، الشهر = ${last30.length} يوم من السجل المرسل من الصندوق.</p></div>
+      <div class="card"><div class="h">🔒 كشوف الجرد المحفوظة (إغلاق اليوم)</div>
+        ${(s.closings || []).length ? `<div class="scrl"><table class="tbl"><thead><tr><th>التاريخ</th><th class="num">الصافي</th><th class="num">النقد</th><th class="num">الفرق</th><th>موظف</th><th>ملاحظات</th></tr></thead>
+          <tbody>${s.closings.slice(0, 20).map(c => `<tr><td class="mono">${c.day || stamp(c.ts)}</td><td class="num">${money((c.stats || {}).total || c.total)}</td>
+            <td class="num">${c.cash != null ? money(c.cash) : '—'}</td>
+            <td class="num" style="color:${c.diff > 0 ? 'var(--lime)' : c.diff < 0 ? 'var(--red)' : ''}">${c.diff != null ? money(c.diff) : '—'}</td>
+            <td>${esc(c.byName || c.by || '—')}</td><td>${esc(c.note || '')}</td></tr>`).join('')}</tbody></table></div>`
+      : '<p class="note">لا كشوف محفوظة. من الصندوق: التقارير ← 🔒 جرد وإغلاق اليوم.</p>'}</div>`;
+  }
+
+  /* ---------- 5) الموظفون ---------- */
+  function viewStaff(v) {
+    const s = P.state, staff = s.staff || [];
+    v.innerHTML = `<div class="card" style="margin-bottom:12px"><div class="h">👥 حسابات النظام <span class="tag">${staff.length}</span>
+      <span class="sp"></span><span class="note">الدخول الحالي: <b>${esc(P.user.name)}</b></span></div>
+      <div class="scrl"><table class="tbl"><thead><tr><th>الموظف</th><th>اسم المستخدم</th><th>الصلاحيات</th><th>اللوحة</th><th>آخر دخول</th></tr></thead>
+        <tbody>${staff.map(u => `<tr><td><b>${esc(u.name)}</b>${u.mustChange ? ' <span class="pill vip">يجب تغيير كلمته</span>' : ''}</td>
+          <td><code style="direction:ltr">${esc(u.uname)}</code></td>
+          <td>${(u.perms || []).includes('*') ? '<span class="pill vip">كل الصلاحيات</span>' : (u.perms || []).map(p => `<span class="pill p1">${esc(PERM[p] || p)}</span>`).join(' ')}</td>
+          <td>${(u.perms || []).includes('*') || (u.perms || []).includes('watch') ? '<span class="pill ok">مصرّح</span>' : '<span class="pill no">لا</span>'}</td>
+          <td class="num">${u.lastLogin ? stamp(Number(u.lastLogin)) : 'لم يدخل'}</td></tr>`).join('')}</tbody></table></div></div>
+      <div class="card"><div class="h">📜 سجل العمليات (آخر 40)</div>${logList((s.log || []).slice(0, 40))}</div>`;
+  }
+  const PERM = {
+    halls: 'الصالات', cafe: 'الكافتيريا', sales: 'عرض المبيعات', refund: 'المرتجعات', discount: 'الخصم',
+    reports: 'التقارير', settings: 'الإعدادات', backup: 'النسخ', users: 'المستخدمون', watch: 'اللوحة'
+  };
+
+  /* ---------- 6) التحكم ---------- */
+  function viewCtl(v) {
+    const s = P.state || {}, acks = (s.acks || []).slice(-8).reverse();
+    v.innerHTML = `<div class="danger-zone" style="margin-bottom:12px">
+      <div class="h" style="font-size:16px">⛔ إيقاف النظام عن بُعد</div>
+      <p class="note">يظهر فورًا على شاشة الصندوق غطاء «النظام موقوف» وتتعطل كل العمليات (بيع، إغلاق حساب، تمديد) — تبقى الجلسات المفتوحة محفوظة ويُسجَّل الإيقاف في سجل الصندوق.</p>
+      <div class="fld" style="margin:12px 0"><label>سبب الإيقاف (يظهر للموظفين)</label>
+        <input id="cnote" placeholder="مثال: انتهاء الدوام / التسوية المالية"></div>
+      <div class="row">${canControl() ? `<button class="btn btn-d" data-ctl="pause">⛔ إيقاف النظام</button>
+        <button class="btn btn-g" data-ctl="resume">▶ استئناف العمل</button>` : '<span class="pill no">🔒 حسابك للعرض فقط — لا يملك أمر الإيقاف</span>'}
+        <span class="sp"></span>
+        <span class="chip ${s.paused ? 'm' : 'g'}">حالة الصندوق: <b>${s.paused ? 'موقوف' : 'يعمل'}</b></span></div></div>
+      <div class="grid g2">
+        <div class="card"><div class="h">أوامر أخرى</div>
+          <div class="row"><button class="btn btn-o" data-ctl="refresh">📡 بث فوري من الصندوق</button>
+            <button class="btn btn-o" data-ctl="ping">🔔 رنّين تنبيه على الشاشة</button></div>
+          <p class="note" style="margin-top:10px">لا تملك هذه اللوحة أي صلاحية تعديل بيانات: لا أسعار، ولا حذف فواتير، ولا تغيير جرد. فقط العرض + الأوامر أعلاه.</p></div>
+        <div class="card"><div class="h">آخر الأوامر المنفّذة في الصندوق</div>
+          <div class="scrl" style="max-height:24vh">${acks.length ? `<table class="tbl"><thead><tr><th>الوقت</th><th>الأمر</th><th>من</th></tr></thead>
+            <tbody>${acks.map(a => `<tr><td class="num">${stamp(Number(a.ts))}</td><td>${esc(a.action)}</td><td>${esc(a.by || '—')}</td></tr>`).join('')}</tbody></table>`
+        : '<p class="note">لم يُنفَّذ أي أمر بعد.</p>'}</div></div>
+      </div>`;
+  }
+  async function control(act, note) {
+    const txt = { pause: 'إيقاف النظام', resume: 'استئناف التشغيل', refresh: 'بث فوري', ping: 'تنبيه صوتي' }[act];
+    if ((act === 'pause' || act === 'resume') && !canControl()) { toast('حسابك للعرض فقط — الإيقاف والاستئناف لحساب مدير اللوحة', 'err'); return; }
+    if (!P.tx) { toast('لا يوجد اتصال: ' + (P.err || ''), 'err'); return; }
+    if (act === 'pause' && !confirm('تأكيد إيقاف النظام؟ ستتعطل كل العمليات على شاشة الصندوق حتى يصل أمر الاستئناف.')) return;
+    try {
+      await P.tx.putCmd({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), action: act, by: P.user.name, note: note || $('#cnote') ? $('#cnote').value : '' });
+      toast('✔ أُرسل الأمر: ' + txt, 'ok');
+      setTimeout(() => fetchState(true), 2500);
+    } catch (e) { toast('✖ فشل إرسال الأمر: ' + e.message, 'err'); }
+  }
+
+  /* ============ توليد قواعد الأمان من بيانات الصندوق نفسها ============ */
+  const q = (arr, extra) => [...new Set([].concat(arr || [], extra || [])
+    .map(x => String(x || '').trim().toLowerCase()).filter(x => x.indexOf('@') > 0))];
+  function ruleEmails() {
+    const st = P.state || {}, cl = st.cloud || {};
+    const pos = String(cl.posEmail || (P.cfg.device || {}).email || '').toLowerCase();
+    const admins = q(st.panelAdmins);
+    const readers = q(st.panelEmails, admins.concat((st.watchers || []).map(u => u.femail), P.cfg.allow || []));
+    return { pos, admins, readers };
+  }
+  const orList = (list, all) => {
+    const l = [...new Set((list || []).filter(x => x && x.indexOf('@') > 0))];
+    if (!l.length) return all ? 'auth != null' : 'false';
+    return "auth != null && (" + l.map(e => "auth.token.email === '" + e + "'").join(' || ') + ")";
+  };
+  function rulesRTDB() {
+    const r0 = ruleEmails();
+    const admins = r0.admins.length ? r0.admins : r0.readers;
+    /* بدون rules_version — شكل مقبول في محرر الكونسول لكل الإصدارات */
+    const obj = {
+      rules: {
+        enterzone: {
+          "$branch": {
+            ".read": orList(r0.readers.concat([r0.pos])),
+            state: { ".write": orList([r0.pos]) },
+            cmd: { ".write": orList(admins), ".validate": "newData.hasChildren(['id'])" }
+          }
+        }
+      }
+    };
+    return { text: JSON.stringify(obj, null, 2), emails: { pos: r0.pos, admins, readers: r0.readers }, guess: !r0.readers.length };
+  }
+  function rulesFS() {
+    const r0 = ruleEmails();
+    const admins = r0.admins.length ? r0.admins : r0.readers;
+    const eq = e => "request.auth != null && request.auth.token.email == '" + e + "'";
+    const any = l => (l && l.length) ? l.map(eq).join('\n          || ') : (admins.length ? 'false' : 'request.auth != null');
+    return "rules_version = '2';\n" +
+      "service cloud.firestore {\n" +
+      "  match /databases/{database}/documents {\n\n" +
+      "    // حساب الكاشير: هو الوحيد الذي يكتب حالة الصندوق\n" +
+      "    function isPos() {\n      return " + (r0.pos ? eq(r0.pos) : 'false') + ";\n    }\n\n" +
+      "    // حسابات اللوحة المسموح لها بالقراءة\n" +
+      "    function canRead() {\n      return " + any([r0.pos].concat(r0.readers)) + ";\n    }\n\n" +
+      "    // حسابات مسموح لها بإرسال أوامر الإيقاف/الاستئناف فقط\n" +
+      "    function canCmd() {\n      return " + any(admins) + ";\n    }\n\n" +
+      "    match /enterzone/{branch}/state {\n" +
+      "      allow read: if canRead();\n" +
+      "      allow write: if isPos();\n" +
+      "    }\n\n" +
+      "    match /enterzone/{branch}/cmd/{id} {\n" +
+      "      allow read: if isPos() || canCmd();\n" +
+      "      allow create, update: if canCmd();\n" +
+      "      allow delete: if isPos();\n" +
+      "    }\n\n" +
+      "    // كل ما عدا ذلك ممنوع\n" +
+      "    match /{document=**} {\n      allow read, write: if false;\n    }\n" +
+      "  }\n}\n";
+  }
+
+  /* ============ ربط أوامر المراقبة فقط ============ */
+  function bindView(e) {
+    const t = e.target;
+    const ctl = t.closest('[data-ctl]');
+    if (ctl) { control(ctl.dataset.ctl, $('#cnote') ? $('#cnote').value : ''); return; }
+    if (t.closest('#sync') || t.closest('#till')) control(t.closest('#sync') ? 'refresh' : 'ping');
+  }
+
+  /* ============ الإقلاع ============ */
+  function start() {
+    const cached = localStorage.getItem(CACHE);
+    if (cached) { try { P.state = JSON.parse(cached); } catch (e) { } }
+    if (!w.EZCloud) {
+      $('#connTxt').textContent = 'تعذر تشغيل الاتصال';
+      return;
+    }
+    applyCfg();
+    P.user = { name: 'لوحة المراقبة', uname: 'monitor', role: 'panel', perms: ['*'], ctrl: true, via: 'direct', at: Date.now() };
+    enter(false);
+  }
+  document.addEventListener('DOMContentLoaded', start);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !$('#modal').classList.contains('hidden')) close();
+  });
+  addEventListener('online', () => { if (P.user) { applyCfg(); fetchState(false); } else boot(); });
+  addEventListener('visibilitychange', () => { if (!document.hidden && P.user) fetchState(true); });
+  $('#rf').onclick = () => fetchState(false);
+    window.EZPANEL = { P, control, fetchState, canControl, signOut };
+})(window);
+
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"75124c326cb447fe934cde04713ae013","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
